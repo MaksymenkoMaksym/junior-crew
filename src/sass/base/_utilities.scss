@@ -1,0 +1,61 @@
+.list {
+  list-style-type: none;
+}
+
+.hidden-element {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  /* Second method */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Non-prefixed version, currentlynot supported by any browser */
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: $breakpoint-mob;
+
+  @media screen and (min-width: $breakpoint-tab) {
+    max-width: $breakpoint-tab;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    max-width: $breakpoint-desk;
+  }
+}
+
+.title {
+  font-family: 'Caveat Brush';
+  @include font(400, 24, 30, none);
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+}
