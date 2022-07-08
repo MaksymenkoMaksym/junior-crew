@@ -87,7 +87,7 @@
 
 .presentation__image {
   position: absolute;
-  bottom: 70%;
+  bottom: 85px;
 }
 
 .presentation__title {
@@ -104,4 +104,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
+}
+
+.presentation__icon {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
