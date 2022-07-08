@@ -1,0 +1,64 @@
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: auto;
+}
+
+.menu-list__link {
+  @include font(500, 24, 29, none);
+  text-align: center;
+  color: currentColor;
+}
+// =================
+.menu {
+  position: fixed;
+}
+.menu__header {
+  display: none;
+}
+
+.menu__header.is-open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: cadetblue;
+
+  padding: 25px;
+
+  height: 648px;
+}
+
+.menu__button {
+  position: absolute;
+  z-index: 100;
+  top: 16px;
+  right: 20px;
+
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button {
+  & .icon-menu {
+    display: block;
+  }
+
+  & .icon-close {
+    display: none;
+  }
+}
+
+.menu__button.is-open {
+  & .icon-menu {
+    display: none;
+  }
+
+  & .icon-close {
+    display: block;
+  }
+}
