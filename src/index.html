@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save the world!" />
+  <title>Oh my DONUT</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <!-- FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+    rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="./sass/index.scss" />
+
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
+
+  <!-- Components -->
+  <!-- Dima S -->
+  <include src="./partials/buttons__component.html"></include>
+  <!--Team Lead Maks-->
+  <include src="./partials/header-menu__component.html"></include>
+  <!--Anton-->
+  <include src="./partials/social-nets__component.html"></include>
+  <!--/ Components -->
+
+
+  <!-- Sections -->
+  <!--Team Lead Maks-->
+  <include src="./partials/header__section.html"></include>
+  <include src="./partials/header-menu__component.html"></include>
+  <!--Anton-->
+  <include src="./partials/about-us__section.html"></include>
+  <include src="./partials/program__section.html"></include>
+  <!-- Dima S -->
+  <include src="./partials/speakers__section.html"></include>
+  <include src="./partials/price__section.html"></include>
+  <!-- Diana -->
+  <include src="./partials/reviews__section.html"></include>
+  <!--Scrum Dmytro-->
+  <include src="./partials/registration__section.html"></include>
+  <include src="./partials/footer-contacts__section.html"></include>
+  <!--/ Sections -->
+
+</body>
+
 </html>

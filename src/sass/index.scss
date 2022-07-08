@@ -1,2 +1,43 @@
 @import './common';
-@import './example';
+// Base styles
+
+// Team Lead Maks
+@import './base/reset';
+
+@import './base/variables';
+
+@import './base/mixins';
+
+@import './base/utilities';
+// Components styles
+
+// Dima S
+@import './component-styles/buttons__styles.scss';
+
+// Team Lead Maks
+@import './component-styles/header-menu__styles.scss';
+
+// Anton
+@import './component-styles/social-nets__styles.scss';
+
+// Sections styles
+
+// Team Lead Maks
+@import './layouts/header__styles.scss';
+
+// Anton
+@import './layouts/about-us__styles.scss';
+
+@import './layouts/program__styles.scss';
+
+// Dima S
+@import './layouts/speakers__styles.scss';
+
+@import './layouts/price__styles.scss';
+
+// Diana
+@import './layouts/reviews__styles.scss';
+
+// Scrum Dmytro
+@import './layouts/registration__styles.scss';
+@import './layouts/footer-contacts__styles.scss';
