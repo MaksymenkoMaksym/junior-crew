@@ -6,15 +6,17 @@
 // Description Container
 
 .description__title {
+  margin-bottom: 8px;
+
   font-family: 'Caveat Brush', cursive;
   font-style: normal;
+  text-align: center;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.15;
   color: var(--main-text-color-black);
 
   @media screen and (min-width: $breakpoint-mob) and (max-width: 767.98px) {
-    margin-bottom: 8px;
     text-align: center;
   }
 }
@@ -60,7 +62,10 @@
 .presentation__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-end;
+  margin: 0;
+  gap: 33px;
 }
 
 .presentation__item {
@@ -81,7 +86,10 @@
 
   &:nth-child(2n + 1) {
     margin-bottom: 64px;
-    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin-bottom: 64px;
   }
 }
 

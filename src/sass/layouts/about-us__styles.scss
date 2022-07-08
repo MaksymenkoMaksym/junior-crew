@@ -1,0 +1,42 @@
+.portrayal__image {
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.characterization__title {
+  margin-bottom: 8px;
+
+  font-family: 'Caveat Brush', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+
+  color: var(--main-text-color-black);
+}
+
+.characterization__paragraph {
+  margin-bottom: 27px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-color-black);
+}
+
+.characterization__btn {
+  background-color: #ffffff;
+  border: none;
+}
+
+.characterization__btn-text {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+  color: var(--accent-color);
+}
