@@ -1,11 +1,19 @@
 .footer {
     position: relative;
     padding-bottom: 46px;
+    @media screen and (min-width: 768px) {
+    padding-bottom: 83px;
+    }
 }
 
 
 .footer__social-list {
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+        
+    }
 }
 
 .contacts-list {
@@ -13,6 +21,10 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    @media screen and (min-width: 768px) {
+    justify-content: normal;
+    gap: 426px;
+    }
 }
 
 .contacts-list__phone,
