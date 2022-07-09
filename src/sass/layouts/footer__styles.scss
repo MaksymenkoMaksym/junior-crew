@@ -1,4 +1,5 @@
 footer {
+    position: relative;
     padding-bottom: 46px;
 }
 .footer-contacts {
@@ -29,4 +30,11 @@ footer {
 
 .contact-list__icon {
     margin-right: 4px;
+}
+
+.footer-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
