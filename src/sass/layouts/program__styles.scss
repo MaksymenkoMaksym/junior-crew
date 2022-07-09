@@ -15,10 +15,6 @@
   font-size: 24px;
   line-height: 1.15;
   color: var(--main-text-color-black);
-
-  @media screen and (min-width: $breakpoint-mob) and (max-width: 767.98px) {
-    text-align: center;
-  }
 }
 
 .description__paragraph {
@@ -65,7 +61,11 @@
   justify-content: center;
   align-items: flex-end;
   margin: 0;
-  gap: 33px;
+  gap: 20px;
+
+  @media screen and (min-width: 470px) and (max-width: $breakpoint-tab) {
+    gap: 33px;
+  }
 }
 
 .presentation__item {
@@ -74,9 +74,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-
-  width: 130px;
-  height: 130px;
 
   text-align: center;
 
@@ -88,8 +85,9 @@
     margin-bottom: 64px;
   }
 
-  @media screen and (max-width: 320px) {
-    margin-bottom: 64px;
+  @media screen and (min-width: 320px) and (max-width: 767.98px) {
+    width: 130px;
+    height: 130px;
   }
 }
 
