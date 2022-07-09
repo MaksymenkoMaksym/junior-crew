@@ -3,10 +3,13 @@
     <h2 class="registration-section__title title">Registration</h2>
     <div class="registration-section__tumb">
       <p class="registration-section__date">
-        <time datetime="2023-05-23 11:00"> May 23, 11:00</time> New York
+        <time class="registration-section__time" datetime="2023-05-23 11:00">
+          May 23, 11:00</time
+        >
+        New York
       </p>
 
-      <form class="form" action="submit">
+      <form class="form registration-section__form" action="submit">
         <p class="form__title">
           <strong>Apply your personal info for registration</strong>
         </p>
@@ -36,7 +39,7 @@
 
         <label class="field"
           ><input
-            class="field__input"
+            class="field__input field__input--margin"
             type="email"
             name="email"
             required
@@ -44,9 +47,30 @@
             pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
             title="Please enter in format my@donut.com"
         /></label>
-
-        <button class="button form-btn" type="submit">Register</button>
       </form>
+      <button class="button registration-section__btn" type="submit">
+        Register
+      </button>
+      <picture class="registration-section__donut">
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/registration/reg-donut-tb.png   1x,
+            ./images/registration/reg-donut-tb2x.png 2x
+          "
+        />
+        <img src="./images/registration/reg-donut-tb.png" alt="donut" />
+      </picture>
+      <picture class="registration-section__confetti">
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/registration/reg-confetti-tb.png   1x,
+            ./images/registration/reg-confetti-tb2x.png 2x
+          "
+        />
+        <img src="./images/registration/reg-confetti-tb.png" alt="confetti" />
+      </picture>
     </div>
   </div>
 </section>
