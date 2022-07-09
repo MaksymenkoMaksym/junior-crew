@@ -1,8 +1,37 @@
 <header class="header container">
-  <a class="logo header__logo">
-    <img src="./images/header/logo-mb-tb.png" alt="company logo" />
-  </a>
+  <div class="nav-wrapper">
+    <a class="logo header__logo">
+      <img src="./images/header/logo-mb-tb.png" alt="company logo" />
+    </a>
 
+    <div class="navigation">
+      <ul class="navigation-list list">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">About us</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Program</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Speakers</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Price</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Reviews</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <h1 class="header__title title">
     Donut Masterclass with the Donut King
   </h1>
@@ -97,72 +126,72 @@
   <div class="img-wrap">
     <picture>
       <source
-        media="(min-width: $breakpoint-desk)"
-        srcset="./images/header/h-donuts-mb-test.png 1x"
-        type="image/jpg"
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/header/h-donuts-dc-test.png   1x,
+          ./images/header/h-donuts-dc-test2x.png 2x
+        "
+        type="image/png"
       />
 
       <source
-        media="(min-width: $breakpoint-tab)"
-        srcset="./images/header/h-donuts-tb-test.png 1x"
-        type="image/jpg"
+        media="(min-width: 768px)"
+        srcset="
+          ./images/header/h-donuts-tb-test.png   1x,
+          ./images/header/h-donuts-tb-test2x.png 2x
+        "
+        type="image/png"
       />
 
       <source
         media="(max-width: 767px)"
-        srcset="./images/header/h-donuts-tb-test.png 1x"
-        type="image/jpg"
+        srcset="
+          ./images/header/h-donuts-mb-test.png   1x,
+          ./images/header/h-donuts-mb-test2x.png 2x
+        "
+        type="image/png"
       />
-
       <img
         class="header__donuts"
+        src="./images/header/h-donuts-mb-test.png"
         width="130"
         height="165"
-        src="./images/header/h-donuts-mb-test.png"
       />
     </picture>
-
-    <!-- <img
-      class="header__donuts"
-      width="130"
-      height="165"
-      src="./images/header/h-donuts-mb-test.png"
-    /> -->
   </div>
 
-  <img
-    class="header__bg"
-    width="130"
-    height="165"
-    src="./images/background/bg-header-tb.png"
-  />
+  <picture>
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        ./images/background/bg-header-dc.png   1x,
+        ./images/background/bg-header-dc2x.png 2x
+      "
+      type="image/png"
+    />
+
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/background/bg-header-tb.png   1x,
+        ./images/background/bg-header-tb2x.png 2x
+      "
+      type="image/png"
+    />
+
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/background/bg-header-mb.png   1x,
+        ./images/background/bg-header-mb2x.png 2x
+      "
+      type="image/png"
+    />
+    <img
+      class="header__bg"
+      src="  ./images/background/bg-header-mb.png "
+      width="130"
+      height="165"
+    />
+  </picture>
 </header>
-
-<!-- <picture>
-  <source
-    media="(min-width: $breakpoint-desk)"
-    srcset="./images/header/h-donuts-mb-test.png 1x"
-    type="image/jpg"
-  />
-
-  <source
-    media="(min-width: $breakpoint-tab)"
-    srcset="./images/header/h-donuts-tb-test.png 1x"
-    type="image/jpg"
-  />
-
-  <source
-    media="(max-width: 767px)"
-    srcset="./images/header/h-donuts-tb-test.png 1x"
-    type="image/jpg"
-  />
-
-  <img
-    class="header__donuts"
-    width="130"
-    height="165"
-    src="./images/header/h-donuts-mb-test.png"
-  />
-</picture> -->
-
-<!-- class="header__donuts" -->
