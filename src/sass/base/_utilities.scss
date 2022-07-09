@@ -31,6 +31,10 @@
   /* Non-prefixed version, currentlynot supported by any browser */
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   padding-right: 20px;
   padding-left: 20px;
@@ -49,12 +53,18 @@
 }
 
 .title {
+  margin-right: auto;
+  margin-left: auto;
+
   font-family: 'Caveat Brush';
   @include font(400, 24, 30, none);
   text-align: center;
 }
 
 .subtitle {
+  margin-right: auto;
+  margin-left: auto;
+
   font-weight: 600;
   font-style: italic;
   text-align: center;
