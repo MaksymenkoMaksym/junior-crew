@@ -1,10 +1,15 @@
+.registration-section {
+    position: relative;
+}
+
 .registration-section__tumb {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 280px;
     height: 436px;
-    padding: 32px 8px;
+    padding: 82px 8px 0px 8px;
+    margin: 0 auto;
     background: #FFFFF9;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px 150px 0px 0px;
@@ -12,7 +17,11 @@
 }
 
 .registration-section__title {
-    margin-bottom: 20px;
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .registration-section__date {
@@ -58,8 +67,6 @@
         }
 
 }
-
-
 
 .form-btn {
     margin-top: 12px;
