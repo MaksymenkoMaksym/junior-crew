@@ -13,6 +13,19 @@
     background: #FFFFF9;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px 150px 0px 0px;
+
+    @media screen and (min-width: 768px) {
+    position: relative;
+    flex-direction: row;
+    max-width: 704px;
+    height: 234px;
+    border-radius: 150px 150px 150px 150px;
+    padding: 40px 60px;
+    
+    
+        
+    
+    }
         
 }
 
@@ -21,6 +34,13 @@
     top: 32px;
     left: 50%;
     transform: translateX(-50%);
+
+    @media screen and (min-width: 768px) {
+       position: relative;
+       top: 0;
+       margin-bottom: 20px;
+    }
+    
 
 }
 
@@ -33,27 +53,60 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 1.2;
-        text-align: center;
+        
     text-align: center;
     color: var(--main-text-color-black);
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 90px;
+        align-items: flex-end;
+        text-align: right;
+        margin-right: 32px;
+    
+  
+    }
 }
+
 
 
 .form {
+    
     text-align: center;
 }
+
+
+.registration-section__form{
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 237px;
+    border-left: 1px solid rgba(171, 129, 108, 0.5);
+    padding-left: 24px;
+    }
+}
+
+
 .form__title {
     padding: 8px 7px;
     margin-bottom: 12px;
     border-top: 1px solid rgba(171, 129, 108, 0.5);
-    text-align: center;
     font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        text-align: center;
-        color: var(--main-text-color-black);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: var(--main-text-color-black);
+
+    @media screen and (min-width: 768px){
+        border-top: none;
+        width: 237px;
+        text-align: left;
+        padding: 0;
+
+    }
 }
 
 .field__input {
@@ -62,13 +115,50 @@
     background-color: #FFFFF9;
     border: transparent;
     border-bottom: 1px solid var(--accent-color);
-&:not(:placeholder-shown):invalid {
+    
+    &:not(:placeholder-shown):invalid {
             background-color: #fce8e8;
         }
-
+    @media screen and (min-width: 768px){
+    &--margin {
+    margin-bottom: 0;
+}
+    }
 }
 
-.form-btn {
+.registration-section__btn {
     margin-top: 12px;
+
+    @media screen and (min-width: 768px){
+        margin-top: 0;
+        margin-right: 0;
+    }
+}
+
+// Background img
+
+.registration-section__donut {
+    opacity: 0;
+    @media screen and (min-width: 768px) {
+    opacity: 1;
+    position: absolute;
+    top: -93px;
+    left: -47px;
+    z-index: -1;
+    transform: rotate(-11.03deg);
+    }
+}
+
+.registration-section__confetti {
+    opacity: 0;
+    
+        @media screen and (min-width: 768px) {
+            opacity: 1;
+            position: absolute;
+            bottom: -155px;
+            right: -25px;
+            z-index: -1;
+            transform: rotate(-42.32deg);
+        }
 }
 
