@@ -1,3 +1,9 @@
+footer {
+    padding-bottom: 46px;
+}
+
+
+
 .footer-contacts {
     padding-top: 32px;
 }
@@ -21,4 +27,35 @@
     
     background-color: transparent;
     
+}
+
+.form-btn {
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.social-list__item {
+    margin-bottom: 32px;
+}
+
+.contacts-list {
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-list__phone,
+.contacts-list__map {
+    text-decoration: none;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #2E2520;
+}
+
+.contact-list__icon {
+    margin-right: 4px;
 }
