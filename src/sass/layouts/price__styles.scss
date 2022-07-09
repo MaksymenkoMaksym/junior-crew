@@ -11,14 +11,17 @@
 }
 
 .price-cards__item {
-  position: relative;
-
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
 
   background-color: var(--bg-color-section);
   border-radius: 40px;
+
+  background-image: url(../images/price/prc-splash-mb.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
 }
 
 .price-cards__item:first-child {
@@ -49,7 +52,6 @@
 
 .card-list {
   margin-bottom: 32px;
-  z-index: 100;
 }
 
 .card-list__item {
@@ -65,11 +67,4 @@
 
 .card-list__item:not(:last-child) {
   margin-bottom: 12px;
-}
-
-.cards__pic--wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
