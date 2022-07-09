@@ -45,6 +45,8 @@
 
   @media screen and (min-width: $breakpoint-tab) {
     max-width: $breakpoint-tab;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
