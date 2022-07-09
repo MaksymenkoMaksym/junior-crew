@@ -8,10 +8,10 @@
   }
 
   @media screen and (min-width: $breakpoint-desk) {
-    padding-top: 60px;
-    padding-right: 103px;
+    padding-top: 92px;
+    padding-right: 105px;
     padding-bottom: 81px;
-    padding-left: 103px;
+    padding-left: 105px;
   }
 }
 
@@ -26,6 +26,7 @@
 .description {
   @media screen and (min-width: $breakpoint-tab) {
     flex-basis: calc((100% - 18px) / 2);
+    margin-right: 18px;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
