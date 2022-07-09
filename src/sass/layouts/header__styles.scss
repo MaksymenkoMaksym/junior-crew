@@ -1,6 +1,12 @@
 .header {
   position: relative;
   padding-top: 16px;
+  @media screen and (min-width: $breakpoint-tab) {
+    padding-top: 24px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+  }
 }
 
 .logo {
@@ -11,15 +17,17 @@
 
 .header__logo {
   max-width: 96px;
-
   margin-bottom: 16px;
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
 }
-
-.menu__logo {
-  max-width: 190px;
-  margin-bottom: 40px;
+.header__social-list {
+  @media screen and (min-width: $breakpoint-tab) {
+    justify-content: flex-start;
+  }
 }
-
 // -------------
 
 .header__title {
@@ -28,21 +36,28 @@
 
   @include font(400, 30, 38, null);
   text-align: center;
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-left: 0;
+    text-align: left;
+  }
 }
+
 .header__subtitle {
   @include font(500, 16, 20, null);
   margin-bottom: 32px;
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 .header__button {
   margin-bottom: 40px;
-}
-
-.header__donuts {
-  position: absolute;
-  left: -12px;
-  top: -51px;
-  z-index: -1;
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
 }
 
 .header__bg {
@@ -53,6 +68,21 @@
 
   width: 100%;
   height: 461px;
+  @media screen and (min-width: $breakpoint-tab) {
+    height: 622px;
+  }
+}
+
+.header__donuts {
+  position: absolute;
+  left: -12px;
+  top: -51px;
+  z-index: -1;
+  @media screen and (min-width: $breakpoint-tab) {
+    width: 378px;
+    height: 554px;
+    top: -35px;
+  }
 }
 
 .img-wrap {
@@ -63,8 +93,11 @@
   width: 130px;
   height: 165px;
   z-index: -1;
-}
 
-.header {
-  background: #000;
+  @media screen and (min-width: $breakpoint-tab) {
+    width: 378px;
+    height: 554px;
+    left: 289px;
+    top: 0;
+  }
 }
