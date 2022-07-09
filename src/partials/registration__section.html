@@ -1,6 +1,6 @@
 <section class="registration-section">
-  <div class="container">
-    <h2 class="registration-section__title">Registration</h2>
+  <div class="container registration-section__tumb">
+    <h2 class="registration-section__title title">Registration</h2>
 
     <p class="registration-section__date">
       <time datetime="2023-05-23 11:00"> May 23, 11:00</time> New York
@@ -17,6 +17,10 @@
           type="text"
           name="name"
           placeholder="Your name"
+          required
+          minlength="2"
+          pattern="[a-zA-Z]+$"
+          title="Username must be at least 2 letter characters in length."
       /></label>
 
       <label class="field"
@@ -25,6 +29,9 @@
           type="tel"
           name="tel"
           placeholder="Phone number"
+          required
+          pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
+          title="Please enter at least 11 characters 1 (555) 555-5555"
       /></label>
 
       <label class="field"
@@ -32,10 +39,13 @@
           class="field__input"
           type="email"
           name="email"
+          required
           placeholder="Email"
+          pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+          title="Please enter in format my@donut.com"
       /></label>
 
-      <button class="button" type="submit">Register</button>
+      <button class="button form-btn" type="submit">Register</button>
     </form>
   </div>
 </section>

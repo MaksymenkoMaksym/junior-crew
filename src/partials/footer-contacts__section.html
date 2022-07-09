@@ -9,6 +9,9 @@
           type="email"
           name="email"
           placeholder="Email"
+          required
+          pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+          title="Please enter in format my@donut.com"
       /></label>
       <label class="field"
         ><input
@@ -16,6 +19,8 @@
           type="text"
           name="question"
           placeholder="Type your question"
+          required
+          maxlength="50"
       /></label>
 
       <button class="button" type="submit">Send</button>
