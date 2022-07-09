@@ -85,9 +85,7 @@
 }
 
 .description__list {
-  @media screen and (min-width: $breakpoint-tab) {
-    margin-bottom: 16px;
-  }
+  margin-bottom: 16px;
 }
 
 .description__item {
