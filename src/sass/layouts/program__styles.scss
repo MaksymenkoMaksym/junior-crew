@@ -1,9 +1,38 @@
 .program-section {
   padding-top: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: $breakpoint-tab) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    padding-top: 60px;
+    padding-right: 103px;
+    padding-bottom: 81px;
+    padding-left: 103px;
+  }
+}
+
+.program-section__container {
+  @media screen and (min-width: $breakpoint-tab) {
+    display: flex;
+  }
 }
 
 // Description Container
+
+.description {
+  @media screen and (min-width: $breakpoint-tab) {
+    flex-basis: calc((100% - 18px) / 2);
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    flex-basis: 336px;
+    margin-right: 142px;
+  }
+}
 
 .description__title {
   margin-bottom: 8px;
@@ -15,6 +44,23 @@
   font-size: 24px;
   line-height: 1.15;
   color: var(--main-text-color-black);
+
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    margin-bottom: 19px;
+
+    font-family: 'Caveat Brush', cursive;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.25;
+    color: var(--main-text-color-black);
+  }
 }
 
 .description__paragraph {
@@ -24,6 +70,23 @@
   font-size: 16px;
   line-height: 1.15;
   color: var(--main-text-color-black);
+
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.description__list {
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-bottom: 16px;
+  }
 }
 
 .description__item {
@@ -32,16 +95,43 @@
   &::before {
     content: '>';
   }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .description__chapter {
   margin-bottom: 16px;
+
+  @media screen and (min-width: 320px) {
+    display: none;
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    display: block;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .description__btn {
   background-color: #ffffff;
   border: none;
   margin-bottom: 55px;
+
+  @media screen and (min-width: $breakpoint-desk) {
+    display: none;
+  }
 }
 
 .description__btn-text {
@@ -55,15 +145,29 @@
 
 // Presentation Container
 
+.presentation {
+  @media screen and (min-width: $breakpoint-tab) {
+    flex-basis: calc((100% - 18px) / 2);
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    display: flex;
+    flex-basis: 500px;
+  }
+}
 .presentation__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
   margin: 0;
-  gap: 20px;
+  // gap: 20px;
 
-  @media screen and (min-width: 470px) and (max-width: $breakpoint-tab) {
+  @media screen and (min-width: 320px) and (max-width: 469.98px) {
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 470px) and (max-width: 1279.98px) {
     gap: 33px;
   }
 }
@@ -82,34 +186,76 @@
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 
   &:nth-child(2n + 1) {
-    margin-bottom: 64px;
+    margin-bottom: 31px;
   }
 
   @media screen and (min-width: 320px) and (max-width: 767.98px) {
     width: 130px;
     height: 130px;
   }
+
+  @media screen and (min-width: $breakpoint-tab) {
+    width: 152px;
+    height: 152px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    width: 180px;
+    height: 180px;
+    &:nth-child(2n + 1) {
+      margin-right: 139px;
+      margin-bottom: 80px;
+    }
+  }
 }
 
 .presentation__image {
   position: absolute;
-  bottom: 85px;
+  bottom: 70%;
 }
 
 .presentation__title {
   margin-bottom: 4px;
 
-  font-family: 'Caveat Brush', cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.28;
+  // font-family: 'Caveat Brush', cursive;
+  // font-style: normal;
+  // font-weight: 400;
+  // font-size: 18px;
+  // line-height: 1.28;
+
+  @media screen and (min-width: 320px) {
+    font-family: 'Caveat Brush', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-family: 'Caveat Brush', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }
 
 .presentation__paragraph {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.21;
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.21;
+
+  @media screen and (min-width: 320px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .presentation__icon {
