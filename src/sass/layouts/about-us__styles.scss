@@ -1,3 +1,7 @@
+.about-us {
+  position: relative;
+}
+
 .about-us__container {
   @media screen and (min-width: $breakpoint-tab) {
     display: flex;
@@ -6,13 +10,23 @@
   @media screen and (min-width: $breakpoint-tab) {
     padding-top: 91px;
   }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    padding-top: 100px;
+    padding-right: 105px;
+    padding-left: 105px;
+  }
 }
 
 // Portrayal Side
 
 .portrayal {
   @media screen and (min-width: $breakpoint-tab) {
-    margin-right: auto;
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    margin-right: 139px;
   }
 }
 
@@ -34,6 +48,20 @@
 
 .characterization {
   flex-basis: calc((100% - 32px) / 2);
+
+  @media screen and (min-width: $breakpoint-tab) {
+    flex-basis: 336px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    flex-basis: 392px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
 }
 .characterization__title {
   margin-bottom: 8px;
@@ -51,6 +79,14 @@
     margin-bottom: 16px;
     text-align: left;
   }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.25;
+  }
 }
 
 .characterization__paragraph {
@@ -61,10 +97,24 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--main-text-color-black);
+
+  @media screen and (min-width: $breakpoint-tab) {
+    &:nth-last-child(3n) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .characterization__paragraph--hide {
-  display: none;
+  // display: none;
 
   @media screen and (min-width: $breakpoint-desk) {
     display: block;
@@ -75,6 +125,10 @@
   background-color: #ffffff;
   border: none;
   padding: 0;
+
+  @media screen and (min-width: $breakpoint-desk) {
+    display: none;
+  }
 }
 
 .characterization__btn-text {
@@ -84,4 +138,17 @@
   font-size: 18px;
   line-height: 1.28;
   color: var(--accent-color);
+}
+
+// Image about-us
+
+.about-us__image {
+  display: none;
+
+  @media screen and (min-width: $breakpoint-desk) {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: block;
+  }
 }

@@ -8,10 +8,10 @@
   }
 
   @media screen and (min-width: $breakpoint-desk) {
-    padding-top: 60px;
-    padding-right: 103px;
+    padding-top: 92px;
+    padding-right: 105px;
     padding-bottom: 81px;
-    padding-left: 103px;
+    padding-left: 105px;
   }
 }
 
@@ -26,6 +26,7 @@
 .description {
   @media screen and (min-width: $breakpoint-tab) {
     flex-basis: calc((100% - 18px) / 2);
+    margin-right: 18px;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
@@ -84,9 +85,7 @@
 }
 
 .description__list {
-  @media screen and (min-width: $breakpoint-tab) {
-    margin-bottom: 16px;
-  }
+  margin-bottom: 16px;
 }
 
 .description__item {
@@ -162,7 +161,6 @@
   justify-content: center;
   align-items: flex-end;
   margin: 0;
-  // gap: 20px;
 
   @media screen and (min-width: 320px) and (max-width: 469.98px) {
     gap: 20px;
@@ -213,16 +211,18 @@
 .presentation__image {
   position: absolute;
   bottom: 70%;
+  left: 50%;
+
+  transform: translate(-50%);
+
+  @media screen and (min-width: $breakpoint-desk) {
+    width: 83px;
+    height: 92px;
+  }
 }
 
 .presentation__title {
   margin-bottom: 4px;
-
-  // font-family: 'Caveat Brush', cursive;
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 18px;
-  // line-height: 1.28;
 
   @media screen and (min-width: 320px) {
     font-family: 'Caveat Brush', cursive;
@@ -242,10 +242,6 @@
 }
 
 .presentation__paragraph {
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.21;
-
   @media screen and (min-width: 320px) {
     font-weight: 400;
     font-size: 14px;
@@ -265,4 +261,14 @@
   left: 50%;
 
   transform: translate(-50%, -50%);
+
+  @media screen and (min-width: $breakpoint-tab) {
+    width: 21px;
+    height: 21px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    width: 25px;
+    height: 25px;
+  }
 }
