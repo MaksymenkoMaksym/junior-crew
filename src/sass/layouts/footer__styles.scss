@@ -1,25 +1,12 @@
-footer {
+.footer {
+    position: relative;
     padding-bottom: 46px;
 }
 .footer-contacts {
     padding-top: 32px;
 }
 
-.footer-contacts__title {
-    margin-bottom: 16px;
-}
-
-.footer-contacts__subtitle {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    margin-bottom: 16px;
-    color: #2E2520;
-}
-.social-list__item {
+.footer__social-list {
     margin-bottom: 32px;
 }
 
@@ -43,4 +30,11 @@ footer {
 
 .contact-list__icon {
     margin-right: 4px;
+}
+
+.footer-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
