@@ -1,0 +1,142 @@
+/* SPEAKERS section */
+.speakers__conteiner {
+  background-color: #ffffff;
+}
+
+.speakers__box {
+  background-color: var(--bg-color-section);
+  border-radius: 20px;
+  padding-bottom: 29px;
+  margin-bottom: 16px;
+
+  /* max-width: 479px; */
+}
+
+.speakers__title {
+  font-family: Caveat Brush;
+  font-size: 24px;
+  line-height: calc(30px / 24px);
+  color: var(--main-text-color-black);
+  text-align: center;
+}
+
+.speakers__container--wave-pic {
+  /* min-width: 480px;
+    margin-left: auto;
+    margin-right: auto; */
+  width: 100%;
+}
+
+.speakers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 20px;
+  align-items: center;
+
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+
+.speakers-list__pic {
+  margin: 0;
+  margin-bottom: 12px;
+  border-radius: 50%;
+}
+
+.speakers-list__item {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: calc(50% - 10px);
+}
+
+.speakers-list__subtitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-color-black);
+  text-align: center;
+}
+
+.speakers-list__desc {
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--main-text-color-black);
+  text-align: center;
+}
+/* SPEAKERS section */
+.speakers__conteiner {
+  background-color: #ffffff;
+}
+
+.speakers__box {
+  background-color: var(--bg-color-section);
+  border-radius: 20px;
+  padding-bottom: 29px;
+  margin-bottom: 16px;
+
+  /* max-width: 479px; */
+}
+
+.speakers__title {
+  font-family: Caveat Brush;
+  font-size: 24px;
+  line-height: calc(30px / 24px);
+  color: var(--main-text-color-black);
+  text-align: center;
+}
+
+.speakers__container--wave-pic {
+  /* min-width: 480px;
+    margin-left: auto;
+    margin-right: auto; */
+  width: 100%;
+}
+
+.speakers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 20px;
+  align-items: center;
+
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+
+.speakers-list__pic {
+  margin: 0;
+  margin-bottom: 12px;
+  border-radius: 50%;
+}
+
+.speakers-list__item {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: calc(50% - 10px);
+}
+
+.speakers-list__subtitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-color-black);
+  text-align: center;
+}
+
+.speakers-list__desc {
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--main-text-color-black);
+  text-align: center;
+}

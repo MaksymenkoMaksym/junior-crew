@@ -1,0 +1,62 @@
+.header {
+  position: relative;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  max-width: 96px;
+  padding-top: 16px;
+
+  margin-bottom: 16px;
+}
+
+.menu__logo {
+  max-width: 190px;
+  margin-bottom: 40px;
+}
+
+// -------------
+
+.header__title {
+  width: 224px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+
+  font-family: 'Caveat Brush';
+  @include font(400, 30, 38, null);
+  text-align: center;
+  &--small {
+    font-family: 'Montserrat';
+    @include font(500, 16, 20, null);
+  }
+}
+
+.header__button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.header__donuts {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.header__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 461px;
+}
