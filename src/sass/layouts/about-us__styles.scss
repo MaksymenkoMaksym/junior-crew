@@ -6,6 +6,12 @@
 
 // Portrayal Side
 
+.portrayal {
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-right: auto;
+  }
+}
+
 .portrayal__image {
   margin-bottom: 20px;
   margin-right: auto;
@@ -15,7 +21,7 @@
 // Characterization Side
 
 .characterization {
-  flex-basis: 392px;
+  flex-basis: calc((100% - 32px) / 2);
 }
 .characterization__title {
   margin-bottom: 8px;
@@ -28,6 +34,11 @@
   text-align: center;
 
   color: var(--main-text-color-black);
+
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-bottom: 16px;
+    text-align: left;
+  }
 }
 
 .characterization__paragraph {
@@ -51,6 +62,7 @@
 .characterization__btn {
   background-color: #ffffff;
   border: none;
+  padding: 0;
 }
 
 .characterization__btn-text {
