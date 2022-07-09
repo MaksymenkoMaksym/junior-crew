@@ -51,6 +51,8 @@
 
   @media screen and (min-width: $breakpoint-desk) {
     max-width: $breakpoint-desk;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 
