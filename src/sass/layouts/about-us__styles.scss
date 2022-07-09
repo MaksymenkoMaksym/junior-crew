@@ -2,6 +2,10 @@
   @media screen and (min-width: $breakpoint-tab) {
     display: flex;
   }
+
+  @media screen and (min-width: $breakpoint-tab) {
+    padding-top: 91px;
+  }
 }
 
 // Portrayal Side
