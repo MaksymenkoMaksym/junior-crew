@@ -81,7 +81,7 @@
   z-index: -1;
   @media screen and (min-width: $breakpoint-tab) {
     width: 378px;
-    height: 554px;
+    height: (554 - 158) px;
     top: -35px;
   }
 }
