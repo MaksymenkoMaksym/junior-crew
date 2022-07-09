@@ -1,0 +1,43 @@
+.reviews {
+  padding-top: 16px;
+  padding-bottom: 81px;
+}
+.reviews__title {
+  font-family: "Caveat Brush";
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--main-text-color-black);
+  margin-bottom: 20px;
+}
+
+.slider__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+.slider__subtitle {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--main-text-color-black);
+  margin-bottom: 8px;
+}
+.slider__text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--main-text-color-black);
+}
+
+.rating {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=reviews__styles.css.map */

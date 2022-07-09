@@ -1,0 +1,71 @@
+.registration-section__tumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+  height: 436px;
+  padding: 32px 8px;
+  background: #FFFFF9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+}
+
+.registration-section__title {
+  margin-bottom: 20px;
+}
+
+.registration-section__date {
+  width: 114px;
+  height: 44px;
+  margin-bottom: 32px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  text-align: center;
+  color: var(--main-text-color-black);
+}
+
+.form {
+  text-align: center;
+}
+
+.form__title {
+  padding: 8px 7px;
+  margin-bottom: 12px;
+  border-top: 1px solid rgba(171, 129, 108, 0.5);
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--main-text-color-black);
+}
+
+.field__input {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #FFFFF9;
+  border: transparent;
+  border-bottom: 1px solid var(--accent-color);
+}
+.field__input:not(:-moz-placeholder-shown):invalid {
+  background-color: #fce8e8;
+}
+.field__input:not(:-ms-input-placeholder):invalid {
+  background-color: #fce8e8;
+}
+.field__input:not(:placeholder-shown):invalid {
+  background-color: #fce8e8;
+}
+.field__input--white {
+  background-color: none;
+}
+
+.form-btn {
+  margin-top: 12px;
+}/*# sourceMappingURL=registration__styles.css.map */

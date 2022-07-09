@@ -1,0 +1,14 @@
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Caveat Brush;
+  font-size: 18px;
+  line-height: 1.2777777778;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  padding: 8px 47px;
+  text-align: center;
+  border: none;
+  border-radius: 25px;
+}/*# sourceMappingURL=buttons__styles.css.map */
