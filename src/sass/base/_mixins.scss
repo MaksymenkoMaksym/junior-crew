@@ -12,3 +12,17 @@
   line-height: calc($lh/$fs);
   text-decoration: $td;
 }
+
+@mixin transition($property, $duration, $delay) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: $delay;
+}
+
+@mixin transition-two($property1, $property2, $duration, $delay) {
+  transition-property: $property1, $property2;
+  transition-duration: $duration;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: $delay;
+}

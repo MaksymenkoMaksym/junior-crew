@@ -1,5 +1,36 @@
 .social-list {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  // gap: 16px;
+  cursor: pointer;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    border-radius: 5px 5px;
+    width: 32px;
+    height: 32px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 8px;
+    padding: 8px;
+    color: inherit;
+    @include transition-two(color, background-color, 250ms, null);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: #f4f4f2;
+    background-color: #cba581;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
 }
