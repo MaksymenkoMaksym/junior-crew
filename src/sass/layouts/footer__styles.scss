@@ -4,6 +4,10 @@
     @media screen and (min-width: 768px) {
     padding-bottom: 83px;
     }
+       
+    @media screen and (min-width: 1280px) {
+    padding-bottom: 232px;
+    }
 }
 
 
@@ -12,7 +16,11 @@
 
     @media screen and (min-width: 768px) {
     margin-bottom: 60px;
-        
+
+    }
+    @media screen and (min-width: 1280px) {
+    margin-bottom: 73px;
+
     }
 }
 
@@ -24,6 +32,11 @@
     @media screen and (min-width: 768px) {
     justify-content: normal;
     gap: 426px;
+    }
+
+    @media screen and (min-width: 1280px) {
+    margin-left: 107px;
+    gap: 620px;
     }
 }
 
@@ -47,4 +60,8 @@
     bottom: 0;
     right: 0;
     z-index: -1;
+
+    @media screen and (min-width: 1280px) {
+    bottom: 75px;
+    }
 }
