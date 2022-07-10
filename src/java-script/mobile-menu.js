@@ -2,7 +2,7 @@
     const menuBtnRef = document.querySelector("[data-menu-button]");
 
     const mobileMenuRef = document.querySelector("[data-menu]");
-    const mobileLinkRef = document.querySelector("[data-link]");
+    const mobileLinkRef = document.querySelector("#menu");
     const header = document.querySelector("#header");
     const body = document.querySelector("body");
 
