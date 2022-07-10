@@ -16,8 +16,13 @@
 }
 
 .program-section__container {
+  @media screen and (max-width: 320px) and (max-width: $breakpoint-mob) {
+    padding: 0;
+  }
+
   @media screen and (min-width: $breakpoint-tab) {
     display: flex;
+    padding: 0;
   }
 }
 
@@ -153,6 +158,7 @@
   @media screen and (min-width: $breakpoint-desk) {
     display: flex;
     flex-basis: 500px;
+    flex-grow: 1;
   }
 }
 .presentation__list {
