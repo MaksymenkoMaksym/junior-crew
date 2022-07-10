@@ -1,11 +1,5 @@
 .about-us {
   position: relative;
-}
-
-.about-us__container {
-  @media screen and (min-width: $breakpoint-tab) {
-    display: flex;
-  }
 
   @media screen and (min-width: $breakpoint-tab) {
     padding-top: 91px;
@@ -15,6 +9,13 @@
     padding-top: 212px;
     padding-right: 105px;
     padding-left: 105px;
+  }
+}
+
+.about-us__container {
+  @media screen and (min-width: $breakpoint-tab) {
+    display: flex;
+    padding: 0;
   }
 }
 
@@ -114,7 +115,7 @@
 }
 
 .characterization__paragraph--hide {
-  // display: none;
+  display: none;
 
   @media screen and (min-width: $breakpoint-desk) {
     display: block;
