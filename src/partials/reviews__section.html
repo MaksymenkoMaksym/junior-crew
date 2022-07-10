@@ -1,4 +1,5 @@
 <section class="reviews container" id="reviews">
+  
   <div class="carousel" id="carousel"> 
   <h2 class="carousel__title">Reviews</h2>
 
@@ -199,5 +200,40 @@
   <div class="reviews__pagination-wrap">
   <p class="reviews-pagination" data-slider-range></p>
   </div>
+  <picture>
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        ./images/background/bg2-rev-con-dc.png  1x,
+        ./images/background/bg2-rev-con-dc2x.png 2x
+      "
+      type="image/png"
+    />
+  
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/background/bg2-rev-con-tb.png   1x,
+        ./images/background/bg2-rev-con-tb2x.png 2x
+      "
+      type="image/png"
+    />
+  
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/background/bg2-rev-con-mb.png  1x,
+        ./images/background/bg2-rev-con-mb2x.png 2x
+      "
+      type="image/png"
+    />
+    <img
+      class="review__bg"
+      src="./images/background/bg2-rev-con-mb.png"
+      width="324"
+      height="1303"
+    />
+  </picture>
 </div>
+
 </section>
