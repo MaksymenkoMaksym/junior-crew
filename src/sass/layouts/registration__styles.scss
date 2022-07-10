@@ -21,10 +21,12 @@
     height: 234px;
     border-radius: 150px 150px 150px 150px;
     padding: 40px 60px;
-    
-    
-        
-    
+    }
+
+    @media screen and (min-width: 1280px) {
+    max-width: 822px;
+    height: 246px;
+    padding: 40px 104px;
     }
         
 }
@@ -39,6 +41,12 @@
        position: relative;
        top: 0;
        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px){
+    margin-bottom: 16px;
+    font-size: 36px;
+    line-height: 1.8;
     }
     
 
@@ -64,8 +72,12 @@
         align-items: flex-end;
         text-align: right;
         margin-right: 32px;
-    
-  
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 20px;
+        flex-basis: 127px;
+        margin-bottom: 0px;
     }
 }
 
@@ -84,6 +96,10 @@
     flex-basis: 237px;
     border-left: 1px solid rgba(171, 129, 108, 0.5);
     padding-left: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+    padding-left: 32px;
     }
 }
 
@@ -107,13 +123,21 @@
         padding: 0;
 
     }
+    @media screen and (min-width: 1280px) {
+        width: 238px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+    }
 }
+
 
 .field__input {
     width: 100%;
     margin-bottom: 20px;
     background-color: #FFFFF9;
-    border: transparent;
+    outline: rgba(0, 0, 0, 0);
+    border: none;
     border-bottom: 1px solid var(--accent-color);
     
     &:not(:placeholder-shown):invalid {
@@ -124,6 +148,22 @@
     margin-bottom: 0;
 }
     }
+
+    @media screen and (min-width: 1280px) {
+    margin-bottom: 14px;
+    &--margin {
+            margin-bottom: 0;
+        }
+    }
+}
+
+input::placeholder {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(171, 129, 108, 0.5);
 }
 
 .registration-section__btn {
@@ -132,6 +172,14 @@
     @media screen and (min-width: 768px){
         margin-top: 0;
         margin-right: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 24px;
+            line-height: 1.25;
+        margin-left: 24px;
+        margin-top: 12px;
+        padding: 8px 45px;
     }
 }
 
@@ -147,18 +195,33 @@
     z-index: -1;
     transform: rotate(-11.03deg);
     }
+
+    @media screen and (min-width: 1280px) {
+    top: -69px;
+    left: -150px;
+    transform: rotate(-20.51deg);
+
+    }
 }
 
 .registration-section__confetti {
     opacity: 0;
     
-        @media screen and (min-width: 768px) {
-            opacity: 1;
-            position: absolute;
-            bottom: -164px;
-            right: -34px;
-            z-index: -1;
-            
-        }
+    @media screen and (min-width: 768px) {
+        opacity: 1;
+        position: absolute;
+        bottom: -164px;
+        right: -34px;
+        z-index: -1;
+        
+    }
+
+    @media screen and (min-width: 1280px) {
+        opacity: 1;
+        bottom: -307px;
+        right: -229px;
+        
+
+    }
 }
 

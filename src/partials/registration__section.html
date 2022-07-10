@@ -11,7 +11,7 @@
 
       <form class="form registration-section__form" action="submit">
         <p class="form__title">
-          <strong>Apply your personal info<br />for registration</strong>
+          Apply your personal info for&nbsp;registration
         </p>
 
         <label class="field"
@@ -63,12 +63,20 @@
       </picture>
       <picture class="registration-section__confetti">
         <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/registration/reg-confetti-dc.png   1x,
+            ./images/registration/reg-confetti-dc2x.png 2x
+          "
+        />
+        <source
           media="(min-width: 768px)"
           srcset="
             ./images/registration/reg-confetti-tb.png   1x,
             ./images/registration/reg-confetti-tb2x.png 2x
           "
         />
+
         <img src="./images/registration/reg-confetti-tb.png" alt="confetti" />
       </picture>
     </div>
