@@ -1,4 +1,11 @@
 /* PRICE section */
+.price__container {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+}
 
 .price__title {
   font-family: Caveat Brush, sans-serif;
@@ -8,6 +15,17 @@
   text-align: center;
 
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.price-cards {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 14px;
+  }
 }
 
 .price-cards__item {
@@ -22,18 +40,30 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    background-image: url(../images/price/prc-splash-tb.png);
+  }
 }
 
 .price-cards__item:first-child {
   margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .price-cards__item:nth-child(2) {
   margin-bottom: 32px;
-}
 
-.price-cards__item:last-child {
-  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .card__title {
@@ -51,7 +81,7 @@
 }
 
 .card-list {
-  margin-bottom: 32px;
+  margin-bottom: auto;
 }
 
 .card-list__item {
@@ -59,6 +89,15 @@
   font-size: 18px;
   line-height: 1.22;
   color: #2e2520;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.card-list__item:last-child {
+  margin-bottom: 32px;
 }
 
 .price-cards:first-child {
