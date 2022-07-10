@@ -35,24 +35,38 @@
 }
 
 .menu {
-  display: none;
-  position: absolute;
-  pointer-events: none;
-}
-
-.menu.is-open {
-  display: block;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  // left: 0;
   height: 100vh;
   width: 100vw;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+
+  @include transition-two(opacity, visibility, 5000ms, 50ms);
+}
+
+.menu.is-open {
+  height: 100vh;
+  width: 100vw;
+
+  visibility: visible;
+  opacity: 1;
+
   backdrop-filter: blur(4px);
   background-color: rgba(254, 243, 228, 0.9);
 
   padding: 25px;
   pointer-events: all;
+
+  transform: translate(-50%, -50%);
 }
 
 .menu-button {
