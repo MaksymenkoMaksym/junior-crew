@@ -1,7 +1,31 @@
 <header class="header container">
   <div class="nav-wrapper">
     <a class="logo header__logo">
-      <img src="./images/header/logo-mb-tb.png" alt="company logo" />
+      <picture class="logo__box">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/header/logo-dc.png   1x,
+            ./images/header/logo-dc2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 1279.98px)"
+          srcset="
+            ./images/header/logo-mb-tb.png   1x,
+            ./images/header/logo-mb-tb2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/header/logo-mb-tb.png"
+          alt="company logo"
+          width="158"
+          height="116"
+        />
+      </picture>
     </a>
 
     <div class="navigation">
