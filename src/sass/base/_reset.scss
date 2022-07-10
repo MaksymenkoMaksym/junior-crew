@@ -1,6 +1,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--main-text-color-black);
+  background-color: #ffffff;
+  @media screen and (min-width: 1280px) {
+    background-color: #fffff9;
+  }
 }
 
 img {
