@@ -15,6 +15,11 @@
   @include font(500, 24, 29, none);
   text-align: center;
   color: currentColor;
+
+  &:hover,
+  &:focus {
+    color: #876655;
+  }
 }
 // =================
 .header__hidden {
@@ -47,6 +52,7 @@
   background-color: rgba(254, 243, 228, 0.9);
 
   padding: 25px;
+  pointer-events: all;
 }
 
 .menu-button {
