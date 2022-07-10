@@ -1,11 +1,20 @@
 .field__input--white {
     background-color: transparent;
+
+    @media screen and(min-width: 1280px) {
+    
+    margin-bottom: 16px;
+
+    }
 }
 
 .contacts {
     padding-top: 32px;
     @media screen and(min-width: 768px) {
     padding-top: 80px;    
+    }
+    @media screen and(min-width: 1280px) {
+        padding-top: 180px;
     }
 }
 
@@ -14,6 +23,10 @@
 
     @media screen and(min-width: 768px) {
         margin-bottom: 20px;
+    }
+    @media screen and(min-width: 1280px) {
+        font-size: 36px;
+        
     }
 }
 
@@ -26,6 +39,11 @@
     text-align: center;
     margin-bottom: 16px;
     color: #2E2520;
+
+    @media screen and(min-width: 1280px) {
+        font-size: 18px;
+            line-height: 1.2;
+    }
 }
 
 .contacts__form {
@@ -36,6 +54,10 @@
     margin-left: auto;
     margin-right: auto;
     }
+
+    @media screen and(min-width: 1280px) {
+    width: 394px;
+    }
 }
 
 
@@ -43,5 +65,11 @@
 .form-btn {
     margin-top: 12px;
     margin-bottom: 32px;
+    @media screen and(min-width: 1280px) {
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 1.25;
+    padding: 8px 67px;
+    }
 }
 
