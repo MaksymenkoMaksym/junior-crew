@@ -15,6 +15,7 @@
     position: relative;
     padding-bottom: 40px;
     margin-bottom: 40px;
+    z-index: -1;
   }
 
   @media screen and (min-width: 1280px) {
@@ -44,7 +45,6 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    z-index: 1;
     left: calc(50% - 38px);
 
     font-size: 36px;
@@ -88,10 +88,16 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
+
+    width: 152px;
+    height: 152px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 16px;
+
+    width: 181px;
+    height: 181px;
   }
 }
 

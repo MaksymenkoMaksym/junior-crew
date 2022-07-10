@@ -32,6 +32,11 @@
   color: currentColor;
   padding-top: 14px;
   padding-bottom: 14px;
+
+  &:hover,
+  &:focus {
+    color: #876655;
+  }
 }
 
 .logo {
