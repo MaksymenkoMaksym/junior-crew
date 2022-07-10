@@ -97,7 +97,7 @@
   margin-bottom: 8px;
 
   &::before {
-    content: '>';
+    content: url(../images/program/pr-donut-icon.svg);
   }
 
   @media screen and (min-width: $breakpoint-desk) {
