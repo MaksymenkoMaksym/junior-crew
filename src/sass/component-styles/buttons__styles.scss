@@ -1,16 +1,21 @@
 .button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-left: auto;
   margin-right: auto;
 
   font-family: Caveat Brush;
-  font-size: 18px;
-  line-height: calc(23px / 18px);
+  @include font(400, 18, 23, null);
+
   color: #ffffff;
   background-color: var(--accent-color);
+  cursor: pointer;
 
-  padding: 8px 47px;
-  text-align: center;
+  width: 145px;
+  height: 40px;
+
   border: none;
   border-radius: 25px;
 }
