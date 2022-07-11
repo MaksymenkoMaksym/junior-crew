@@ -77,7 +77,29 @@
   margin-right: auto;
   border-radius: 50%;
   cursor: pointer;
-}
+  &:hover, &:focus {
+  border-radius: 60% 40%;
+  box-shadow:  -5px -9px 0 9px var(--accent-color),
+               2px -10px 0 var(--accent-color) inset;
+  animation: move-shadow 2s infinite;
+  
+  @keyframes move-shadow {
+    25%{
+      border-radius: 50% 60%;
+      box-shadow:  3px 2px 0 5px var(--accent-color),
+                   3px -2px 0 5px var(--accent-color) inset;
+      }
+    50%{
+      border-radius: 70% 60%;
+      box-shadow:  8px 3px 0 0px var(--accent-color),
+                   -2px 3px 0 10px var(--accent-color) inset;
+      }
+    75%{
+      border-radius: 45% 60%;
+      box-shadow:  -1px -6px 0 0px var(--accent-color),
+                   -3px -5px 0 10px var(--accent-color) inset;
+      }}
+}}
 
 .rating {
   margin-top: 8px;
@@ -165,8 +187,9 @@
 }
 
 .reviews-pagination::after {
-  position: absolute;
   content: '';
+  position: absolute;
+  
   display: block;
   align-items: center;
   width: 35;
@@ -182,9 +205,10 @@
 }
 
 .reviews-pagination::before {
+
+  content: '';
   position: absolute;
   align-items: center;
-  content: '';
   display: block;
   width: 35px;
   /*border-bottom: 1px solid var(--accent-color);*/
@@ -197,3 +221,6 @@
     left: 588px;
   }
 }
+
+
+
