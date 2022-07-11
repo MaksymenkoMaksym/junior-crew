@@ -12,7 +12,12 @@
           required
           pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
           title="Please enter in format my@donut.com"
-      /></label>
+        />
+        <svg class="info-icon" width="15" height="15">
+          <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
+          <use class="success-icon" href="./images/icons.svg#icon-happy"></use>
+        </svg>
+      </label>
       <label class="field"
         ><input
           class="field__input field__input--white"
@@ -21,7 +26,12 @@
           placeholder="Type your question"
           required
           maxlength="50"
-      /></label>
+        />
+        <svg class="info-icon" width="15" height="15">
+          <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
+          <use class="success-icon" href="./images/icons.svg#icon-happy"></use>
+        </svg>
+      </label>
     </form>
     <button class="button form-btn" type="submit">Send</button>
   </div>
