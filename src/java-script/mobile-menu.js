@@ -16,7 +16,6 @@
         body.classList.toggle("no-scroll");
 
 
-
     },
     );
     mobileLinkRef.addEventListener("click", () => {
