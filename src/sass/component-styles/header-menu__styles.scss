@@ -36,37 +36,33 @@
 
 .menu {
   position: fixed;
-  z-index: -10;
   top: 0;
-  // left: 0;
-  height: 100vh;
-  width: 100vw;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  visibility: hidden;
+  padding: 25px;
+  // visibility: hidden;
   opacity: 0;
-
-  @include transition-two(opacity, visibility, 500ms, 50ms);
+  border-radius: 100%;
+  transform: scale(0.3);
+  @include transition-two(transform, opacity, 300ms, 100ms);
+  background-color: #fef3e4;
 }
 
 .menu.is-open {
-  height: 100vh;
-  width: 100vw;
+  border-radius: 0%;
 
-  visibility: visible;
   opacity: 1;
-  z-index: 100;
   backdrop-filter: blur(4px);
   background-color: rgba(254, 243, 228, 0.9);
-
-  padding: 25px;
-
-  transform: translate(-50%, -50%);
-
+  transform: scale(1);
   pointer-events: auto;
+}
+
+.fade-in {
+  opacity: 0;
 }
 
 .menu-button {
