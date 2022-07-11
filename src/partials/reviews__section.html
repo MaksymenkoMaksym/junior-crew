@@ -1,7 +1,137 @@
 <section class="reviews-section container">
-  <div class="container" id="reviews">
+  <div class="container" id="reviews"  >
     <h2 class="carousel__title">Reviews</h2>
     <div class="carousel" id="carousel">
+      <article class="slider-carousel" data-reviews>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/reviews/rv-john-dc.png   1x,
+              ./images/reviews/rv-john-dc2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/reviews/rv-john-tb.png   1x,
+              ./images/reviews/rv-john-tb2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/reviews/rv-john-tb.png   1x,
+              ./images/reviews/rv-john-tb2x.png 2x
+            "
+          />
+          <img
+            src="./images/reviews/rv-john-tb.png"
+            alt="young guy in glasses"
+            class="slider-carousel__image"
+          />
+        </picture>
+
+        <ul class="rating list">
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-full"></use>
+            </svg>
+          </li>
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-full"></use>
+            </svg>
+          </li>
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-full"></use>
+            </svg>
+          </li>
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-full"></use>
+            </svg>
+          </li>
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-empty"></use>
+            </svg>
+          </li>
+        </ul>
+        <h3 class="slider-carousel__subtitle">John</h3>
+        <p
+        class="slider-carousel__text slider-carousel__text--active"
+        data-slide="0"
+      >
+        Slava natsii - smert vorogam
+      </p>
+      </article>
+            <article class="slider-carousel">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/reviews/rv-john-dc.png   1x,
+              ./images/reviews/rv-john-dc2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/reviews/rv-john-tb.png   1x,
+              ./images/reviews/rv-john-tb2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/reviews/rv-john-tb.png   1x,
+              ./images/reviews/rv-john-tb2x.png 2x
+            "
+          />
+          <img
+            src="./images/reviews/rv-john-tb.png"
+            alt="young guy in glasses"
+            class="slider-carousel__image"
+          />
+        </picture>
+
+        <ul class="rating list">
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-full"></use>
+            </svg>
+          </li>
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-full"></use>
+            </svg>
+          </li>
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-full"></use>
+            </svg>
+          </li>
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-full"></use>
+            </svg>
+          </li>
+          <li class="rating__item">
+            <svg class="rating__icon" width="24px" height="24px" fill="#ab816c">
+              <use href="./images/icons.svg#icon-Star-empty"></use>
+            </svg>
+          </li>
+        </ul>
+        <h3 class="slider-carousel__subtitle">John</h3>
+        <p
+        class="slider-carousel__text slider-carousel__text--active"
+        data-slide="0"
+      >
+        Slava natsii - smert vorogam
+      </p>
+      </article>
       <article class="slider-carousel">
         <picture>
           <source
@@ -60,6 +190,12 @@
           </li>
         </ul>
         <h3 class="slider-carousel__subtitle">John</h3>
+        <p
+        class="slider-carousel__text slider-carousel__text--active"
+        data-slide="0"
+      >
+        Slava natsii - smert vorogam
+      </p>
       </article>
       <article class="slider-carousel">
         <picture>
@@ -119,6 +255,9 @@
           </li>
         </ul>
         <h3 class="slider-carousel__subtitle">Will</h3>
+        <p class="slider-carousel__text" data-slide="1">
+          Slava Ulraini - geroyam slava
+        </p>
       </article>
 
       <article class="slider-carousel">
@@ -179,30 +318,18 @@
           </li>
         </ul>
         <h3 class="slider-carousel__subtitle">Elizabeth</h3>
+        <p class="slider-carousel__text" data-slide="2">
+          Ukraina ponad yse
+        </p>
       </article>
 
-      <div class="reviews__pagination-wrap" >
-        <p class="reviews-pagination" data-slider-range></p>
-      </div>
+
+
 
     </div>
-
-    <article class="reviews" data-reviews>
-      <p
-        class="slider-carousel__text slider-carousel__text--active"
-        data-slide="0"
-      >
-        Slava natsii - smert vorogam
-      </p>
-      <p class="slider-carousel__text" data-slide="1">
-        Slava Ulraini - geroyam slava
-      </p>
-      <p class="slider-carousel__text" data-slide="2">
-        Ukraina ponad yse
-      </p>
-         <div class="reviews__pagination-wrap">
-      <p class="reviews-pagination" data-slider-range></p>
-    </div> 
-    </article>
+    
+  </div>
+  <div class="reviews__pagination-wrap">
+    <p class="reviews-pagination" data-slider-range></p>
   </div>
 </section>
