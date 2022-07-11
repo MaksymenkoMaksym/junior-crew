@@ -1,6 +1,65 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--main-text-color-black);
+
+  background-color: #ffffff;
+  // background-size: cover;
+
+  // background-position: top 0 right 0, bottom 250px right 0;
+  // background-size: 100% 460px, 100% 1230px;
+
+  background-position: top 0 right 0, bottom 211px right 0;
+  background-repeat: no-repeat;
+
+  // mobile screens
+  background-size: 100% 460px, 100% 1303px;
+
+  background-image: url(../images/background/bg-header-mb.png),
+    url(../images/background/bg2-rev-con-mb.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background/bg-header-mb2x.png),
+      url(../images/background/bg2-rev-con-mb2x.png);
+  }
+
+  // tablet screens
+  @media screen and (min-width: 768px) {
+    background-size: 100% 622px, 100% 1456px;
+
+    background-position: top 0 right 0, bottom 72px right 0;
+
+    background-image: url(../images/background/bg-header-tb.png),
+      url(../images/background/bg2-rev-con-tb.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/bg-header-tb2x.png),
+        url(../images/background/bg2-rev-con-tb2x.png);
+    }
+  }
+
+  // desktop screens
+  @media screen and (min-width: 1280px) {
+    background-color: #fffff9;
+    background-size: 100% 1036px, 100% 2073px;
+
+    background-position: top 0 right 0, bottom 0 right 0;
+    background-image: url(../images/background/bg-header-dc.png),
+      url(../images/background/bg2-rev-con-dc.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/bg-header-dc2x.png),
+        url(../images/background/bg2-rev-con-dc2x.png);
+    }
+  }
 }
 
 img {
