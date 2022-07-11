@@ -14,7 +14,7 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 280px;
-  
+
   padding: 32px 8px;
   margin: 0 auto;
   background: #fffff9;
@@ -274,6 +274,7 @@ input::placeholder {
 
   @include font(400, 16, 20, null);
   color: rgba(171, 129, 108, 0.5);
+  @include transition-two(color, transform, 300ms, null);
 }
 
 .field__input:not(:placeholder-shown) + .field__name {
@@ -292,6 +293,8 @@ input::placeholder {
 .error-icon,
 .success-icon {
   opacity: 0;
+  @include transition(opacity, 300ms, null);
+  fill: #eb0000;
 }
 
 .field__input:not(:placeholder-shown):invalid ~ .error-icon {
