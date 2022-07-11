@@ -145,6 +145,7 @@
   .slider-carousel__image {
     transition: all 0.22s linear;
     width: 152px;
+    height: auto;
     @media screen and (min-width: 768px) {
       width: 152px;
     }
