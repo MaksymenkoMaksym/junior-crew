@@ -85,6 +85,9 @@
 }
 
 .registration-section__form {
+  @media screen and (max-width: 767px) {
+  flex-grow: 2;}
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -115,6 +118,7 @@
     width: 237px;
     text-align: left;
     padding: 0;
+    margin-bottom: 16px;
   }
   @media screen and (min-width: 1280px) {
     width: 238px;
@@ -124,9 +128,41 @@
   }
 }
 
+.field {
+  position: relative;
+  display: block;
+  
+  &--margin {margin-bottom: 0;}
+
+@media screen and (max-width: 767px) {
+    margin-bottom: 22px;
+  &--margin {
+      margin-bottom: 0;
+    }}
+
+@media screen and (min-width: 768px) {
+  margin-bottom: 18px;
+  &--margin {
+      margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+  margin-bottom: 16px;
+  &--margin {
+      margin-bottom: 0;
+    }
+}
+
+}
+
+
+
+
 .field__input {
+
   width: 100%;
-  margin-bottom: 20px;
+  
   background-color: #fffff9;
   outline: rgba(0, 0, 0, 0);
   border: none;
@@ -135,19 +171,9 @@
   &:not(:placeholder-shown):invalid {
     background-color: #fce8e8;
   }
-  @media screen and (min-width: 768px) {
-    &--margin {
-      margin-bottom: 0;
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 14px;
-    &--margin {
-      margin-bottom: 0;
-    }
-  }
+  
 }
+
 
 input::placeholder {
   font-family: 'Montserrat';
@@ -160,18 +186,21 @@ input::placeholder {
 
 .registration-section__btn {
   margin-top: 12px;
+  margin-bottom: 32px;
   height: 40px;
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 24px;
     line-height: 1.25;
     margin-left: 24px;
-    margin-top: 12px;
+    margin-bottom: 0;
+    
     padding: 8px 45px;
     width: 158px;
     height: 45px;
@@ -215,3 +244,37 @@ input::placeholder {
     right: -229px;
   }
 }
+
+
+// ICONS & Validation
+ 
+.info-icon {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  opacity: 1;
+}
+
+.field__input:not(:placeholder-shown):invalid~.error-icon {
+  opacity: 1;
+  fill: red;
+}
+.error-icon,
+.success-icon {
+  opacity: 0;
+  
+}
+
+.field__input:not(:placeholder-shown):invalid~.info-icon .error-icon {
+  opacity: 1;
+  fill: red;
+}
+
+.field__input:not(:placeholder-shown):valid~.info-icon .success-icon {
+  opacity: 1;
+  fill: lightgreen;
+}
+
+
+
+

@@ -24,7 +24,15 @@
             minlength="2"
             pattern="[a-zA-Z]+$"
             title="Username must be at least 2 letter characters in length."
-        /></label>
+          />
+          <svg class="info-icon" width="15" height="15">
+            <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
+            <use
+              class="success-icon"
+              href="./images/icons.svg#icon-happy"
+            ></use>
+          </svg>
+        </label>
 
         <label class="field"
           ><input
@@ -35,18 +43,34 @@
             required
             pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
             title="Please enter at least 11 characters 1 (555) 555-5555"
-        /></label>
+          />
+          <svg class="info-icon" width="15" height="15">
+            <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
+            <use
+              class="success-icon"
+              href="./images/icons.svg#icon-happy"
+            ></use>
+          </svg>
+        </label>
 
-        <label class="field"
+        <label class="field field--margin"
           ><input
-            class="field__input field__input--margin"
+            class="field__input"
             type="email"
             name="email"
             required
             placeholder="Email"
             pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
             title="Please enter in format my@donut.com"
-        /></label>
+          />
+          <svg class="info-icon" width="15" height="15">
+            <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
+            <use
+              class="success-icon"
+              href="./images/icons.svg#icon-happy"
+            ></use>
+          </svg>
+        </label>
       </form>
       <button class="button registration-section__btn" type="submit">
         Register
