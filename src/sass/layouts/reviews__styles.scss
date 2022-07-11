@@ -76,6 +76,7 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
+  height: auto;
   cursor: pointer;
   &:hover, &:focus {
   border-radius: 60% 40%;
@@ -145,7 +146,7 @@
   .slider-carousel__image {
     transition: all 0.22s linear;
     width: 152px;
-    height: auto;
+  
     @media screen and (min-width: 768px) {
       width: 152px;
     }
