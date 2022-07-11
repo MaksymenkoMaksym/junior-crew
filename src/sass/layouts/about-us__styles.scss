@@ -6,13 +6,17 @@
   }
 
   @media screen and (min-width: $breakpoint-desk) {
-    padding-top: 100px;
-    padding-right: 105px;
-    padding-left: 105px;
+    padding-top: 164px;
+    padding-right: 125px;
+    padding-left: 125px;
   }
 }
 
 .about-us__container {
+  @media screen and (max-width: 320px) and (max-width: $breakpoint-mob) {
+    padding: 0;
+  }
+
   @media screen and (min-width: $breakpoint-tab) {
     display: flex;
     padding: 0;
@@ -22,8 +26,13 @@
 // Portrayal Side
 
 .portrayal {
+  @media screen and (min-width: 320px) {
+    margin-bottom: 16px;
+  }
+
   @media screen and (min-width: $breakpoint-tab) {
     margin-right: 32px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
@@ -33,7 +42,6 @@
 
 .portrayal__image {
   @media screen and (max-width: 767.98px) {
-    margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -50,18 +58,21 @@
 .characterization {
   flex-basis: calc((100% - 32px) / 2);
 
+  @media screen and (min-width: 320px) and (max-width: $breakpoint-mob) {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   @media screen and (min-width: $breakpoint-tab) {
     flex-basis: 336px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-content: flex-end;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
     flex-basis: 392px;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: center;
   }
 }
 .characterization__title {
@@ -91,18 +102,14 @@
 }
 
 .characterization__paragraph {
-  margin-bottom: 27px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: var(--main-text-color-black);
 
-  @media screen and (min-width: $breakpoint-mob) {
-    &:nth-last-child(3n) {
-      margin-bottom: 12px;
-    }
+  @media screen and (min-width: 320px) {
+    margin-bottom: 16px;
   }
 
   @media screen and (min-width: $breakpoint-tab) {
@@ -112,16 +119,19 @@
   }
 
   @media screen and (min-width: $breakpoint-desk) {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 
     font-weight: 400;
     font-size: 18px;
     line-height: 1.22;
+
+    &:nth-last-child(3n) {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .characterization__paragraph--hide {
-  margin-bottom: 16px;
   @media screen and (min-width: 320px) {
     display: none;
   }

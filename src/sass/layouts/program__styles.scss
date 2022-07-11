@@ -9,9 +9,9 @@
 
   @media screen and (min-width: $breakpoint-desk) {
     padding-top: 92px;
-    padding-right: 105px;
+    padding-right: 125px;
     padding-bottom: 81px;
-    padding-left: 105px;
+    padding-left: 125px;
   }
 }
 
@@ -22,27 +22,34 @@
 
   @media screen and (min-width: $breakpoint-tab) {
     display: flex;
-    padding: 0;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    gap: 142px;
   }
 }
 
 // Description Container
 
 .description {
+  @media screen and (min-width: 320px) and (max-width: $breakpoint-mob) {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
   @media screen and (min-width: $breakpoint-tab) {
-    flex-basis: calc((100% - 18px) / 2);
-    margin-right: 18px;
+    max-width: 336px;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
-    flex-basis: 336px;
-    margin-right: 142px;
+    max-width: 392px;
   }
 }
 
 .description__title {
-  margin-bottom: 8px;
-
   font-family: 'Caveat Brush', cursive;
   font-style: normal;
   text-align: center;
@@ -50,6 +57,10 @@
   font-size: 24px;
   line-height: 1.15;
   color: var(--main-text-color-black);
+
+  @media screen and (min-width: 320px) {
+    margin-bottom: 10px;
+  }
 
   @media screen and (min-width: $breakpoint-tab) {
     margin-bottom: 16px;
@@ -114,7 +125,7 @@
 
   @media screen and (min-width: 320px) {
     display: none;
-    margin-top: 16px;
+    margin-bottom: 14.5px;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
@@ -134,10 +145,6 @@
   padding: 0;
   cursor: pointer;
 
-  @media screen and (max-width: 767.98px) {
-    margin-bottom: 55px;
-  }
-
   @media screen and (min-width: $breakpoint-desk) {
     display: none;
   }
@@ -155,10 +162,6 @@
 // Presentation Container
 
 .presentation {
-  @media screen and (min-width: $breakpoint-tab) {
-    flex-basis: calc((100% - 18px) / 2);
-  }
-
   @media screen and (min-width: $breakpoint-desk) {
     display: flex;
     flex-basis: 500px;
@@ -170,38 +173,69 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  margin: 0;
 
-  @media screen and (min-width: 320px) and (max-width: 469.98px) {
-    gap: 20px;
+  @media screen and (min-width: 320px) {
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  @media screen and (min-width: 470px) and (max-width: 1279.98px) {
-    gap: 33px;
+  @media screen and (min-width: $breakpoint-tab) {
+    max-width: 336px;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    min-width: 500px;
   }
 }
 
 .presentation__item {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-
+  align-items: flex-end;
   text-align: center;
-
-  background-color: var(--bg-color-section);
-  border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-
-  &:nth-child(2n + 1) {
-    margin-bottom: 31px;
-  }
 
   @media screen and (min-width: 320px) and (max-width: 767.98px) {
     width: 130px;
-    height: 130px;
+    height: 165px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 20px;
+      margin-bottom: 32px;
+    }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 152px;
+    height: 184px;
+  }
+  &:nth-child(2n + 1) {
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    width: 180px;
+    height: 220px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 139px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.presentation__wrapper {
+  width: 130px;
+  height: 130px;
+  background: #fef3e4;
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 4px 4px rgb(171 129 108 / 25%);
 
   @media screen and (min-width: $breakpoint-tab) {
     width: 152px;
@@ -211,24 +245,12 @@
   @media screen and (min-width: $breakpoint-desk) {
     width: 180px;
     height: 180px;
-    &:nth-child(2n + 1) {
-      margin-right: 139px;
-      margin-bottom: 80px;
-    }
   }
 }
 
 .presentation__image {
   position: absolute;
-  bottom: 70%;
-  left: 50%;
-
-  transform: translate(-50%);
-
-  @media screen and (min-width: $breakpoint-desk) {
-    width: 83px;
-    height: 92px;
-  }
+  top: 0;
 }
 
 .presentation__title {
@@ -242,7 +264,19 @@
     line-height: 1.28;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-tab) {
+    margin-bottom: 8px;
+
+    font-family: 'Caveat Brush', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    margin-bottom: 16px;
+
     font-family: 'Caveat Brush', cursive;
     font-style: normal;
     font-weight: 400;
@@ -253,12 +287,14 @@
 
 .presentation__paragraph {
   @media screen and (min-width: 320px) {
+    margin-bottom: 9px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.21;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
+    margin-bottom: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -266,18 +302,16 @@
 }
 
 .presentation__icon {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+  margin-bottom: 11px;
 
   @media screen and (min-width: $breakpoint-tab) {
+    margin-bottom: 19px;
     width: 21px;
     height: 21px;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
+    margin-bottom: 16px;
     width: 25px;
     height: 25px;
   }
