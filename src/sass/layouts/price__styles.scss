@@ -1,12 +1,15 @@
 /* PRICE section */
 .price {
+  margin-top: 16px;
   padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
+    padding-top: 40px;
     padding-bottom: 80px;
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 80px;
     padding-bottom: 86px;
   }
 }
@@ -45,11 +48,13 @@
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 479.98px;
 
   background-color: var(--bg-color-section);
   border-radius: 40px;
 
-  background-image: url(../images/price/prc-splash-mb.png);
+  background-image: url(../images/price/prc-splash-mb.png),
+    url(../images/price/prc-splash-mb2x.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -59,13 +64,19 @@
     flex-wrap: nowrap;
     flex-direction: column;
 
-    background-image: url(../images/price/prc-splash-tb.png);
+    min-width: 225px;
+
+    background-image: url(../images/price/prc-splash-tb.png),
+      url(../images/price/prc-splash-tb2x.png);
   }
 
   @media screen and (min-width: 1280px) {
     padding: 28px 28px 40px;
 
-    background-image: url(../images/price/prc-splash-dc.png);
+    min-width: 392px;
+
+    background-image: url(../images/price/prc-splash-dc.png),
+      url(../images/price/prc-splash-dc2x.png);
   }
 }
 
@@ -103,6 +114,7 @@
     margin-bottom: 40px;
   }
 }
+// ПРОВЕРИТЬ ВАРИАНТЫ
 
 .card-list {
   margin-bottom: auto;
@@ -122,14 +134,6 @@
   @media screen and (min-width: 1280px) {
     font-size: 20px;
     line-height: 1.2;
-  }
-}
-
-.card-list__item:last-child {
-  margin-bottom: 32px;
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
   }
 }
 
@@ -217,4 +221,10 @@
 
 .link {
   text-decoration: none;
+
+  margin-top: 32px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 40px;
+  }
 }
