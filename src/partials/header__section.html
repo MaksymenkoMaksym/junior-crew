@@ -113,7 +113,7 @@
       </svg>
     </button>
     <nav class="menu" data-menu>
-      <a class="menu__logo logo">
+      <a class="menu__logo logo" href="#header">
         <img
           class="logo__img"
           src="./images/header/logo-menu-mb-tb.png"
@@ -122,29 +122,29 @@
           height="85"
       /></a>
 
-      <ul class="menu__nav menu-list list">
+      <ul class="menu__nav menu-list list" id="menu">
         <li class="menu-list__item">
-          <a class="menu-list__link" href="#about-us">About us</a>
+          <a class="menu-list__link" href="#about-us" data-link>About us</a>
         </li>
 
         <li class="menu-list__item">
-          <a class="menu-list__link" href="#program">Program</a>
+          <a class="menu-list__link" href="#program" data-link>Program</a>
         </li>
 
         <li class="menu-list__item">
-          <a class="menu-list__link" href="#speakers">Speakers</a>
+          <a class="menu-list__link" href="#speakers" data-link>Speakers</a>
         </li>
 
         <li class="menu-list__item">
-          <a class="menu-list__link" href="#price">Price</a>
+          <a class="menu-list__link" href="#price" data-link>Price</a>
         </li>
 
         <li class="menu-list__item">
-          <a class="menu-list__link" href="#reviews">Reviews</a>
+          <a class="menu-list__link" href="#reviews" data-link>Reviews</a>
         </li>
 
         <li class="menu-list__item">
-          <a class="menu-list__link" href="#kontacts">Contacts</a>
+          <a class="menu-list__link" href="#kontacts" data-link>Contacts</a>
         </li>
       </ul>
     </nav>
@@ -221,4 +221,15 @@
       height="165"
     />
   </picture>
+
+  <button class="arrow-up" type="button" data-up>
+    <a class="arrow-up__link" href="#header">
+      <svg class="arrow-up__icon" width="60" height="60">
+        <use
+          class="icon-arrow-up"
+          href="./images/icons.svg#icon-arrow-up"
+        ></use>
+      </svg>
+    </a>
+  </button>
 </header>
