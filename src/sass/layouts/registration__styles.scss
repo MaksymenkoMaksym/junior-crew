@@ -235,7 +235,21 @@ input::placeholder {
     top: -93px;
     left: -32px;
     z-index: -1;
+    animation: rotate 3000ms infinite 3000ms;
+    
   }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+  
+      50% {
+        transform: rotate(30deg);
+      }
+  
+      100% {
+        transform: rotate(0deg);
+      }}
 
   @media screen and (min-width: 1280px) {
     top: -69px;
