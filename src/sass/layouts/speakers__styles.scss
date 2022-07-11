@@ -29,10 +29,14 @@
   @media screen and (min-width: 768px) {
     padding-top: 150px;
     padding-bottom: 40px;
+
+    background-image: url(../images/speakers/sp-splash-tb.png);
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 230px;
+
+    background-image: url(../images/speakers/sp-splash-dc.png);
   }
 }
 
