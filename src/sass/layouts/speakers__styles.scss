@@ -1,38 +1,38 @@
 /* SPEAKERS section */
-.speakers__conteiner {
+.speakers {
   background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 16px;
+
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 80px;
+  }
 }
 
 .speakers__box {
   background-color: var(--bg-color-section);
   border-radius: 20px;
+  padding-top: 80px;
   padding-bottom: 29px;
 
+  background-image: url(../images/speakers/sp-splash-mb.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+
   @media screen and (min-width: 768px) {
-    position: relative;
+    padding-top: 150px;
     padding-bottom: 40px;
-    margin-bottom: 40px;
-    z-index: -1;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 80px;
-  }
-}
-
-.speakers__bg {
-  width: 100%;
-  height: 67px;
-
-  @media screen and (min-width: 768px) {
-    height: 137px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    height: 216px;
+    padding-top: 230px;
   }
 }
 
@@ -43,10 +43,9 @@
   color: var(--main-text-color-black);
   text-align: center;
 
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    left: calc(50% - 38px);
+  margin-bottom: 2px;
 
+  @media screen and (min-width: 768px) {
     font-size: 36px;
   }
   @media screen and (min-width: 1280px) {
@@ -60,14 +59,10 @@
   gap: 32px 20px;
   align-items: flex-start;
 
-  margin-top: 13px;
-  margin-bottom: 16px;
-
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     gap: 32px 0;
     justify-content: space-between;
-    margin-top: 18px;
   }
 
   @media screen and (min-width: 1280px) {
