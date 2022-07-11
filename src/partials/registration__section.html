@@ -14,17 +14,18 @@
           Apply your personal info for&nbsp;registration
         </p>
 
-        <label class="field"
-          ><input
+        <label class="field">
+          <input
             class="field__input"
             type="text"
             name="name"
-            placeholder="Your name"
+            placeholder=" "
             required
             minlength="2"
             pattern="[a-zA-Z]+$"
             title="Username must be at least 2 letter characters in length."
           />
+          <span class="field__name">Your name</span>
           <svg class="info-icon" width="15" height="15">
             <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
             <use
@@ -39,11 +40,12 @@
             class="field__input"
             type="tel"
             name="tel"
-            placeholder="Phone number"
+            placeholder=" "
             required
             pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
             title="Please enter at least 11 characters 1 (555) 555-5555"
           />
+          <span class="field__name">Phone number</span>
           <svg class="info-icon" width="15" height="15">
             <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
             <use
@@ -59,10 +61,11 @@
             type="email"
             name="email"
             required
-            placeholder="Email"
+            placeholder=" "
             pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
             title="Please enter in format my@donut.com"
           />
+          <span class="field__name">Email</span>
           <svg class="info-icon" width="15" height="15">
             <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
             <use
