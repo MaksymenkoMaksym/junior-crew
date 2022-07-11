@@ -53,11 +53,16 @@
   background-color: var(--bg-color-section);
   border-radius: 40px;
 
-  background-image: url(../images/price/prc-splash-mb.png),
-    url(../images/price/prc-splash-mb2x.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+  background-image: url(../images/price/prc-splash-mb.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/price/prc-splash-mb2x.png);
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -66,8 +71,13 @@
 
     min-width: 225px;
 
-    background-image: url(../images/price/prc-splash-tb.png),
-      url(../images/price/prc-splash-tb2x.png);
+    background-image: url(../images/price/prc-splash-tb.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/price/prc-splash-tb2x.png);
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -75,8 +85,13 @@
 
     min-width: 392px;
 
-    background-image: url(../images/price/prc-splash-dc.png),
-      url(../images/price/prc-splash-dc2x.png);
+    background-image: url(../images/price/prc-splash-dc.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/price/prc-splash-dc2x.png);
+    }
   }
 }
 
