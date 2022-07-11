@@ -1,21 +1,22 @@
 
-.reviews {
+.reviews-section {
   position: relative;
 }
 
+
 .review__bg {
   position: absolute;
- top:0;
+  top:0;
   width: 100%;
-  /*height: 100%;*/
+
   z-index: -1;
   @media screen and (min-width: 768px) {
     height: 1482px;
-    bottom: 46px;
+ 
   }
   @media screen and (min-width: 1280px) {
     height: 2073;
-    bottom:211px
+
   }
 } 
 
@@ -63,7 +64,7 @@
     line-height: 1.25;
   }
 }
-.comments__text {
+.slider-carousel__text {
   text-align: center;
   font-size: 16px;
   line-height: 1.25;
@@ -94,12 +95,12 @@
   display: block;
 }
 
-.comments {
+.reviews {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
-.comments--animation {
+.reviews--animation {
   opacity: 0;
 }
 
@@ -177,8 +178,8 @@
   content: '';
   display: block;
   align-items: center;
-  width: 35px;
-  border-bottom: 1px solid var(--accent-color);
+  width: 35;
+  /*border-bottom: 1px solid var(--accent-color);*/
   top: 50%;
   right: 101px;
   @media screen and (min-width: 768px) {
@@ -195,7 +196,7 @@
   content: '';
   display: block;
   width: 35px;
-  border-bottom: 1px solid var(--accent-color);
+  /*border-bottom: 1px solid var(--accent-color);*/
   top: 50%;
   left: 103px;
   @media screen and (min-width: 768px) {
