@@ -78,7 +78,7 @@
   border-radius: 50%;
   height: auto;
   cursor: pointer;
-  &:hover, &:focus {
+  /*&:hover, &:focus {
   border-radius: 60% 40%;
   box-shadow:  -5px -9px 0 9px var(--accent-color),
                2px -10px 0 var(--accent-color) inset;
@@ -100,7 +100,7 @@
       box-shadow:  -1px -6px 0 0px var(--accent-color),
                    -3px -5px 0 10px var(--accent-color) inset;
       }}
-}}
+}*/}
 
 .rating {
   margin-top: 8px;
