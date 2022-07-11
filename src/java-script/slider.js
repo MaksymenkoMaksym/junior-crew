@@ -13,6 +13,7 @@ $carouselEl.slick({
     arrows: false,
     centerPadding: '0px',
     slidesToShow: 3,
+    slidesToScroll:3,
     focusOnSelect: true,
     draggable: false,
     autoplay: false,
