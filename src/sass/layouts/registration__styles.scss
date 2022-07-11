@@ -184,7 +184,7 @@ input::placeholder {
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
-    opacity: 1;
+    
     position: absolute;
     top: -93px;
     left: -32px;
@@ -202,7 +202,7 @@ input::placeholder {
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
-    opacity: 1;
+    
     position: absolute;
     bottom: -164px;
     right: -34px;
@@ -210,7 +210,7 @@ input::placeholder {
   }
 
   @media screen and (min-width: 1280px) {
-    opacity: 1;
+    
     bottom: -307px;
     right: -229px;
   }
