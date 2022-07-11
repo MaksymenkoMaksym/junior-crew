@@ -1,25 +1,20 @@
-
 .reviews-section {
   position: relative;
 }
 
-
 .review__bg {
   position: absolute;
-  top:0;
+  top: 0;
   width: 100%;
 
   z-index: -1;
   @media screen and (min-width: 768px) {
     height: 1482px;
- 
   }
   @media screen and (min-width: 1280px) {
     height: 2073;
-
   }
-} 
-
+}
 
 .carousel {
   padding-bottom: 60px;
@@ -65,6 +60,7 @@
   }
 }
 .slider-carousel__text {
+  display: none;
   text-align: center;
   font-size: 16px;
   line-height: 1.25;
@@ -121,9 +117,6 @@
   margin: 0 auto;
 }
 
-
-
-
 .slick-slide,
 .slick-slide[aria-hidden='true']:not(.slick-cloned)
   ~ .slick-cloned[aria-hidden='true'] {
@@ -131,10 +124,10 @@
     transition: all 0.22s linear;
     width: 152px;
     @media screen and (min-width: 768px) {
-    width: 152px;
+      width: 152px;
     }
     @media screen and (min-width: 1280px) {
-    width: 288px;
+      width: 288px;
     }
   }
 }
@@ -152,8 +145,6 @@
     }
   }
 }
-
-
 
 .reviews__pagination-wrap {
   margin-top: 32px;
