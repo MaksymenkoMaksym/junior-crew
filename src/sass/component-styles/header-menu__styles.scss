@@ -65,6 +65,8 @@
   padding: 25px;
 
   transform: translate(-50%, -50%);
+
+  pointer-events: auto;
 }
 
 .menu-button {
@@ -77,6 +79,7 @@
   background-color: transparent;
   padding: 0;
 
+  pointer-events: auto;
   & .icon-menu {
     display: block;
   }
