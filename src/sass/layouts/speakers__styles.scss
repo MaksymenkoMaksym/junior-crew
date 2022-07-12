@@ -3,10 +3,10 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-color: var(--bg-color-section);
+  // background-color: var(--bg-color-section);
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+  background-position: center;
+  background-size: 100% 100%;
   background-image: url(../images/speakers/sp-splash-mb.png);
 
   @media (min-device-pixel-ratio: 2),
