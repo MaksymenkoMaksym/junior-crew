@@ -33,11 +33,13 @@
   color: currentColor;
   padding-top: 14px;
   padding-bottom: 14px;
-  @include transition(color, 2500ms, 0);
+  border-radius: 10px;
+  @include transition(color, 300ms, 0);
 
   &:hover,
   &:focus {
     color: #876655;
+    // background-color: rgb(252, 248, 243);
   }
   &:hover::after {
     opacity: 1;
@@ -50,8 +52,8 @@
   width: 120%;
   height: 100%;
   background-color: transparent;
-
   border: 2px solid #876655;
+
   border-radius: 10px;
 
   transform: translate(-50%, -50%);
@@ -59,7 +61,7 @@
   top: 50%;
   left: 50%;
   opacity: 0;
-  @include transition(opacity, 2500ms, 0);
+  @include transition(opacity, 300ms, 0);
 }
 
 .logo {
@@ -135,19 +137,19 @@
   padding: 8px 44px;
   text-align: center;
 
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: $breakpoint-tab) {
     @include font(400, 24, 30, none);
     width: 158px;
     height: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     margin-left: 0;
   }
   @media screen and (min-width: $breakpoint-desk) {
     width: 158px;
     height: 45px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 }
 
