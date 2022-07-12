@@ -62,10 +62,8 @@
 // Characterization Side
 
 .characterization {
-  // flex-basis: calc((100% - 32px) / 2);
-
-  @media screen and (min-width: 320px) and (max-width: $breakpoint-mob) {
-    width: 280px;
+  @media screen and (min-width: 320px) and (max-width: 767.98px) {
+    width: 279px;
     margin-right: auto;
     margin-left: auto;
   }

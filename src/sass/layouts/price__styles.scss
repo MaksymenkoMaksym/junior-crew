@@ -12,22 +12,21 @@
     padding-top: 80px;
     padding-bottom: 86px;
   }
-}
 
-.price__title {
-  font-family: Caveat Brush, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  color: var(--main-text-color-black);
-  text-align: center;
-
-  margin-bottom: 16px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
-    // npm i jquery
-    font-size: 36px;
+  &__title {
+    font-family: Caveat Brush, sans-serif;
+    font-size: 24px;
     line-height: 1.25;
+    color: var(--main-text-color-black);
+    text-align: center;
+
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      font-size: 36px;
+      line-height: 1.25;
+    }
   }
 }
 
@@ -40,74 +39,82 @@
   @media screen and (min-width: 1280px) {
     gap: 32px;
   }
-}
 
-.price-cards__item {
-  position: relative;
+  &__item {
+    position: relative;
 
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 479.98px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 479.98px;
 
-  background-color: var(--bg-color-section);
-  border-radius: 40px;
+    background-color: var(--bg-color-section);
+    border-radius: 40px;
 
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-  background-image: url(../images/price/prc-splash-mb.png);
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/price/prc-splash-mb2x.png);
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-
-    min-width: 225px;
-
-    background-image: url(../images/price/prc-splash-tb.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-image: url(../images/price/prc-splash-mb.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/price/prc-splash-tb2x.png);
+      background-image: url(../images/price/prc-splash-mb2x.png);
+    }
+
+    @media screen and (max-width: 479.98px) {
+      max-width: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+
+      min-width: 225px;
+
+      background-image: url(../images/price/prc-splash-tb.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/price/prc-splash-tb2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 28px 28px 40px;
+
+      min-width: 392px;
+
+      background-image: url(../images/price/prc-splash-dc.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/price/prc-splash-dc2x.png);
+      }
+    }
+
+    &:first-child {
+      margin-bottom: 12px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 32px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+      }
     }
   }
 
-  @media screen and (min-width: 1280px) {
-    padding: 28px 28px 40px;
-
-    min-width: 392px;
-
-    background-image: url(../images/price/prc-splash-dc.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/price/prc-splash-dc2x.png);
-    }
-  }
-}
-
-.price-cards__item:first-child {
-  margin-bottom: 12px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-}
-
-.price-cards__item:nth-child(2) {
-  margin-bottom: 32px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+  &:first-child {
+    margin-bottom: 12px;
   }
 }
 
@@ -129,38 +136,40 @@
     margin-bottom: 40px;
   }
 }
-// ПРОВЕРИТЬ ВАРИАНТЫ
 
 .card-list {
   margin-bottom: auto;
-}
 
-.card-list__item {
-  font-family: Montserrat, sans-serif;
-  font-size: 18px;
-  line-height: 1.22;
-  color: #2e2520;
-
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-    line-height: 1.25;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: auto;
+    max-width: 240px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  @media screen and (min-width: 1280px) {
-    font-size: 20px;
-    line-height: 1.2;
+  &__item {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #2e2520;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
   }
-}
 
-.price-cards:first-child {
-  margin-bottom: 12px;
-}
+  &:not(:last-child) {
+    margin-bottom: 12px;
 
-.card-list__item:not(:last-child) {
-  margin-bottom: 12px;
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 16px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 16px;
+    }
   }
 }
 
