@@ -12,6 +12,7 @@ $carouselEl.slick({
     centerMode: true,
     arrows: false,
     centerPadding: '0px',
+    infinity:true,
     slidesToShow: 3,
     slidesToScroll:3,
     focusOnSelect: true,
@@ -52,6 +53,7 @@ $('.comments').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    infinity:true,
     asNavFor:'.carousel',
   });
   
