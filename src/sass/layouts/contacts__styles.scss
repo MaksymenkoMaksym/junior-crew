@@ -3,12 +3,12 @@
 }
 
 .contacts {
-    margin-top: 32px;
+    padding-top: 32px;
     @media screen and(min-width: 768px) {
-    margin-top: 80px;    
+    padding-top: 80px;    
     }
     @media screen and(min-width: 1280px) {
-        margin-top: 180px;
+        padding-top: 180px;
     }
 }
 
@@ -47,6 +47,7 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 32px;
     }
 
     @media screen and(min-width: 1280px) {
@@ -57,10 +58,10 @@
 
 
 .form-btn {
-    margin-top: 12px;
+    
     margin-bottom: 32px;
     @media screen and(min-width: 1280px) {
-    margin-top: 16px;
+    
     font-size: 24px;
     line-height: 1.25;
     padding: 8px 67px;
