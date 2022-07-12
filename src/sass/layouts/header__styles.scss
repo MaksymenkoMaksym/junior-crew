@@ -26,17 +26,40 @@
 }
 
 .navigation-list__link {
+  position: relative;
   display: block;
   @include font(400, 18, 22, none);
   text-align: center;
   color: currentColor;
   padding-top: 14px;
   padding-bottom: 14px;
+  @include transition(color, 2500ms, 0);
 
   &:hover,
   &:focus {
     color: #876655;
   }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.navigation-list__link::after {
+  content: ' ';
+  display: block;
+  width: 120%;
+  height: 100%;
+  background-color: transparent;
+
+  border: 2px solid #876655;
+  border-radius: 10px;
+
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  @include transition(opacity, 2500ms, 0);
 }
 
 .logo {
