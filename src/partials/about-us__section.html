@@ -3,18 +3,60 @@
     <div class="portrayal">
       <picture>
         <source
-        media="(min-width: 1280px)"
-        srcset="./images/about_us/au-cup-box-dc.png 1x, ./images/about_us/au-cup-box-dc2x.png 2x"
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/about_us/au-cup-box-dc.webp   1x,
+            ./images/about_us/au-cup-box-dc2x.webp 2x
+          "
+          type="image/webp"
         />
         <source
-        media="(min-width: 768px)"
-        srcset="./images/about_us/au-cup-box-tb.png 1x, ./images/about_us/au-cup-box-tb2x.png 2x"
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/about_us/au-cup-box-dc.png   1x,
+            ./images/about_us/au-cup-box-dc2x.png 2x
+          "
+          type="image/png"
         />
         <source
-        media="(max-width: 767px)"
-        srcset="./images/about_us/au-cup-box-mb.png 1x, ./images/about_us/au-cup-box-mb2x.png 2x"
+          media="(min-width: 768px)"
+          srcset="
+            ./images/about_us/au-cup-box-tb.webp   1x,
+            ./images/about_us/au-cup-box-tb2x.webp 2x
+          "
+          type="image/webp"
         />
-        <img class="portrayal__image" src="./images/about_us/au-cup-box-mb.png" alt="Cup of coffee with donuts" width="279" height="298">
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/about_us/au-cup-box-tb.png   1x,
+            ./images/about_us/au-cup-box-tb2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/about_us/au-cup-box-mb.webp   1x,
+            ./images/about_us/au-cup-box-mb2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/about_us/au-cup-box-mb.png   1x,
+            ./images/about_us/au-cup-box-mb2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="portrayal__image"
+          src="./images/about_us/au-cup-box-mb.png"
+          alt="Cup of coffee with donuts"
+          width="279"
+          height="298"
+        />
       </picture>
     </div>
     <div class="characterization">
@@ -29,14 +71,20 @@
         many celebrities. Eva and our shop have received multiple awards &
         recognition for excellence.
       </p>
-    <p class="characterization__paragraph characterization__paragraph--hide" data-text>
-        We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will
-        enjoy our cooking atmosphere!
-    </p>
-    <button class="characterization__btn" type="button" data-btn-more>
-      <span class="characterization__btn-text" data-text-more>Read more</span>
-      <span class="characterization__btn-text is-hidden" data-text-less>Less</span>
-    </button>
+      <p
+        class="characterization__paragraph characterization__paragraph--hide"
+        data-text
+      >
+        We are going to teach you how to cook with passion and sparkles in your
+        eyes! We love what we do and believe you will enjoy our cooking
+        atmosphere!
+      </p>
+      <button class="characterization__btn" type="button" data-btn-more>
+        <span class="characterization__btn-text" data-text-more>Read more</span>
+        <span class="characterization__btn-text is-hidden" data-text-less
+          >Less</span
+        >
+      </button>
     </div>
   </div>
 </section>

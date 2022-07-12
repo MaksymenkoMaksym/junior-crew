@@ -17,6 +17,7 @@ $carouselEl.slick({
     focusOnSelect: true,
     draggable: false,
     autoplay: false,
+    asNavFor:'.comments',
     speed: ANIMATION_TIMING,
     responsive: [
         {
@@ -46,3 +47,11 @@ $carouselEl.on('beforeChange', (e, slick, currSlide, nextSlide) => {
         }, ANIMATION_TIMING);
     });
 });
+
+$('.comments').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor:'.carousel',
+  });
+  
