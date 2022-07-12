@@ -34,3 +34,9 @@
     fill: currentColor;
   }
 }
+
+.header__social-list {
+  @media screen and (min-width: $breakpoint-tab) {
+    justify-content: flex-start;
+  }
+}
