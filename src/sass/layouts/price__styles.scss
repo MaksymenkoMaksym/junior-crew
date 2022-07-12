@@ -141,7 +141,7 @@
   margin-bottom: auto;
 
   @media screen and (max-width: 767.98px) {
-    margin-bottom: auto;
+    // margin-bottom: auto;
     max-width: 240px;
     margin-right: auto;
     margin-left: auto;
@@ -163,13 +163,13 @@
       line-height: 1.2;
     }
   }
+}
 
-  &:not(:last-child) {
-    margin-bottom: 12px;
+.card-list__item :not(:last-child) {
+  margin-bottom: 12px;
 
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 16px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
   }
 }
 
