@@ -24,6 +24,7 @@
   @media screen and (min-width: $breakpoint-tab) {
     display: flex;
     padding: 0;
+    gap: 139px;
   }
 }
 
@@ -39,7 +40,7 @@
   }
 
   @media screen and (min-width: $breakpoint-desk) {
-    margin-right: 139px;
+    margin-right: 0;
   }
 }
 
@@ -122,14 +123,14 @@
   }
 
   @media screen and (min-width: $breakpoint-desk) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     font-weight: 400;
     font-size: 18px;
     line-height: 1.22;
 
     &:nth-last-child(3n) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 }
