@@ -66,6 +66,18 @@
   border-radius: 50%;
   height: auto;
   cursor: pointer;
+  /*&:hover {
+    box-shadow:
+      1px 1px var(--accent-color),
+      2px 2px var(--accent-color),
+      3px 3px var(--accent-color),
+      4px 4px var(--accent-color),
+      5px 5px var(--accent-color),
+      6px 6px var(--accent-color),
+      7px 7px var(--accent-color);
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }*/
   
   /*&:hover, &:focus {
   border-radius: 60% 40%;
@@ -96,6 +108,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &__item:not(:last-child) {
+    margin-right: 4px;
+}
+}
+
+.rating__icon {
+	-webkit-animation: rotating 30s infinite linear;
+	-moz-animation: rotating 30s infinite linear;
+	-ms-animation: rotating 30s infinite linear;
+	-o-animation: rotating 30s infinite linear;
+	animation: rotating 30s infinite linear;
+}
+
+@-webkit-keyframes rotating {
+	to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotating {
+	to { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes rotating {
+	to { -ms-transform: rotate(360deg); }
+}
+@-o-keyframes rotating {
+	to { -o-transform: rotate(360deg); }
+}
+@keyframes rotating {
+	to { transform: rotate(360deg); }
 }
 
 .slider-carousel__text--active {
@@ -134,7 +173,6 @@
 .slick-slide[aria-hidden='true']:not(.slick-cloned)
   ~ .slick-cloned[aria-hidden='true'] {
   .slider-carousel__image {
-    transition: all 0.22s linear;
     width: 152px;
   
     @media screen and (min-width: 768px) {
@@ -154,11 +192,11 @@
     margin-bottom: 8px;
     @media screen and (min-width: 768px) {
       width: 336px;
-      margin-top: 95px;
+      margin-top: 76px;
     }
     @media screen and (min-width: 1280px) {
       width: 394px;
-      margin-top: 170px;
+      margin-top: 143px;
     }
   }
 }
@@ -166,12 +204,10 @@
 
 .reviews-pagination {
   position: relative;
-  margin-bottom: 0;
   text-align: center;
   font-size: 14px;
   line-height: 1.21;
   color: var(--accent-color);
-
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.25;
@@ -180,36 +216,24 @@
 
 .reviews-pagination::after {
   content: '';
-  position: absolute;
-  display: block;
+  display: inline-block;
   align-items: center;
-  /*width: 35;
-  border-bottom: 1px solid var(--accent-color);*/
-  top: 50%;
-  right: 101px;
-  @media screen and (min-width: 768px) {
-    right: 325px;
-  }
-  @media screen and (min-width: 1280px) {
-    right: 580px;
-  }
+  width: 35px;
+  height: 1px;
+  margin-left: 12px;
+  vertical-align: middle;
+  background-color: currentColor;
 }
 
 .reviews-pagination::before {
   content: '';
-  position: absolute;
+  display: inline-block;
   align-items: center;
-  display: block;
-  /*width: 35px;
-  border-bottom: 1px solid var(--accent-color);*/
-  top: 50%;
-  left: 103px;
-  @media screen and (min-width: 768px) {
-    left: 323px;
-  }
-  @media screen and (min-width: 1280px) {
-    left: 588px;
-  }
+  width: 35px;
+  height: 1px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background-color: currentColor;
 }
 
 
