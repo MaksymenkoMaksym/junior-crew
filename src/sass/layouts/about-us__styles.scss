@@ -2,7 +2,7 @@
   position: relative;
 
   @media screen and (min-width: $breakpoint-tab) {
-    padding-top: 91px;
+    padding-top: 70px;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
@@ -15,6 +15,10 @@
 .about-us__container {
   @media screen and (max-width: 320px) and (max-width: $breakpoint-mob) {
     padding: 0;
+  }
+
+  @media screen and (min-width: $breakpoint-tab) {
+    gap: 32px;
   }
 
   @media screen and (min-width: $breakpoint-tab) {
@@ -31,7 +35,6 @@
   }
 
   @media screen and (min-width: $breakpoint-tab) {
-    margin-right: 32px;
     margin-bottom: 0;
   }
 
