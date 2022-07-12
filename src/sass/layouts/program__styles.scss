@@ -251,6 +251,22 @@
 .presentation__image {
   position: absolute;
   top: 0;
+
+  animation: rotate-donut 5s linear infinite;
+}
+
+@keyframes rotate-donut {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .presentation__title {
