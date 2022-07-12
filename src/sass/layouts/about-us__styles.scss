@@ -2,7 +2,7 @@
   position: relative;
 
   @media screen and (min-width: $breakpoint-tab) {
-    padding-top: 91px;
+    padding-top: 70px;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
@@ -20,6 +20,13 @@
   @media screen and (min-width: $breakpoint-tab) {
     display: flex;
     padding: 0;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    display: flex;
+    padding: 0;
+    gap: 139px;
   }
 }
 
@@ -31,12 +38,11 @@
   }
 
   @media screen and (min-width: $breakpoint-tab) {
-    margin-right: 32px;
     margin-bottom: 0;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
-    margin-right: 139px;
+    margin-right: 0;
   }
 }
 
@@ -56,7 +62,7 @@
 // Characterization Side
 
 .characterization {
-  flex-basis: calc((100% - 32px) / 2);
+  // flex-basis: calc((100% - 32px) / 2);
 
   @media screen and (min-width: 320px) and (max-width: $breakpoint-mob) {
     width: 280px;
@@ -65,7 +71,7 @@
   }
 
   @media screen and (min-width: $breakpoint-tab) {
-    flex-basis: 336px;
+    width: 336px;
   }
 
   @media screen and (min-width: $breakpoint-desk) {
@@ -119,14 +125,14 @@
   }
 
   @media screen and (min-width: $breakpoint-desk) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     font-weight: 400;
     font-size: 18px;
     line-height: 1.22;
 
     &:nth-last-child(3n) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -167,13 +173,13 @@
 
 // Image about-us
 
-.about-us__image {
-  display: none;
+// .about-us__image {
+//   display: none;
 
-  @media screen and (min-width: $breakpoint-desk) {
-    position: absolute;
-    top: 5%;
-    left: 0;
-    display: block;
-  }
-}
+//   @media screen and (min-width: $breakpoint-desk) {
+//     position: absolute;
+//     top: 5%;
+//     left: 0;
+//     display: block;
+//   }
+// }
