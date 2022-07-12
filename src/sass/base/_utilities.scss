@@ -74,3 +74,24 @@
   font-style: italic;
   text-align: center;
 }
+
+// Spoon
+
+.background-overlay {
+  @media screen and (min-width: $breakpoint-desk) {
+    background-image: url(../images/about_us/background-spon__dt.webp);
+    background-repeat: no-repeat;
+    background-position: top 500px left calc(50% - 624px);
+    background-size: 264px auto;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about_us/background-spoon__dt@2x.webp);
+      background-repeat: no-repeat;
+      background-position: top 500px left calc(50% - 624px);
+      background-size: 264px auto;
+    }
+  }
+}

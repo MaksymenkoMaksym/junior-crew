@@ -32,3 +32,24 @@
     );
   }
 }
+
+.header__button {
+  text-decoration: none;
+  padding: 8px 44px;
+  text-align: center;
+
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $breakpoint-tab) {
+    @include font(400, 24, 30, none);
+    width: 158px;
+    height: 45px;
+    margin-bottom: 12px;
+    margin-left: 0;
+  }
+  @media screen and (min-width: $breakpoint-desk) {
+    width: 158px;
+    height: 45px;
+    margin-bottom: 24px;
+  }
+}

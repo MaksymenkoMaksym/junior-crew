@@ -1,8 +1,3 @@
-.menu__logo {
-  max-width: 190px;
-  margin-bottom: 40px;
-}
-
 .menu-list {
   display: flex;
   flex-direction: column;
@@ -55,10 +50,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+
   pointer-events: none;
   width: 100%;
-  height: 100%;
   @media screen and (min-width: $breakpoint-desk) {
     display: none;
   }
@@ -73,21 +67,21 @@
   z-index: 100;
 
   padding: 25px;
+
   // visibility: hidden;
   opacity: 0;
   border-radius: 100%;
   transform: scale(0.3);
   @include transition-two(transform, opacity, 300ms, 100ms);
-  background-color: #fef3e4;
+  background-color: rgba(254, 243, 228, 0.9);
+  backdrop-filter: blur(4px);
 }
 
 .menu.is-open {
   border-radius: 0%;
-
   opacity: 1;
-  backdrop-filter: blur(4px);
-  background-color: rgba(254, 243, 228, 0.9);
   transform: scale(1);
+
   pointer-events: auto;
 }
 
@@ -98,7 +92,7 @@
 .menu-button {
   position: absolute;
   z-index: 200;
-  top: 16px;
+  top: 20px;
   right: 20px;
 
   border: none;
@@ -116,7 +110,6 @@
 }
 
 .menu-button.is-open {
-  top: 20px;
   & .icon-menu {
     display: none;
   }
