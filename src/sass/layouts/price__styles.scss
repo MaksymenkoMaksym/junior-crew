@@ -25,7 +25,6 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
-    // npm i jquery
     font-size: 36px;
     line-height: 1.25;
   }
@@ -62,6 +61,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/price/prc-splash-mb2x.png);
+  }
+
+  @media screen and (max-width: 479.98px) {
+    max-width: 280px;
   }
 
   @media screen and (min-width: 768px) {
@@ -129,10 +132,16 @@
     margin-bottom: 40px;
   }
 }
-// ПРОВЕРИТЬ ВАРИАНТЫ
 
 .card-list {
   margin-bottom: auto;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: auto;
+    max-width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .card-list__item {
