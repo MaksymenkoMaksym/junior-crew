@@ -30,7 +30,7 @@
 }
 
 .slider-carousel {  
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 &__subtitle {
   text-align: center;
   font-style: italic;
@@ -66,42 +66,7 @@
   border-radius: 50%;
   height: auto;
   cursor: pointer;
-  /*&:hover {
-    box-shadow:
-      1px 1px var(--accent-color),
-      2px 2px var(--accent-color),
-      3px 3px var(--accent-color),
-      4px 4px var(--accent-color),
-      5px 5px var(--accent-color),
-      6px 6px var(--accent-color),
-      7px 7px var(--accent-color);
-    -webkit-transform: translateX(-7px);
-    transform: translateX(-7px);
-  }*/
-  
-  /*&:hover, &:focus {
-  border-radius: 60% 40%;
-  box-shadow:  -5px -9px 0 9px var(--accent-color),
-               2px -10px 0 var(--accent-color) inset;
-  animation: move-shadow 2s infinite;
-  
-  @keyframes move-shadow {
-    25%{
-      border-radius: 50% 60%;
-      box-shadow:  3px 2px 0 5px var(--accent-color),
-                   3px -2px 0 5px var(--accent-color) inset;
-      }
-    50%{
-      border-radius: 70% 60%;
-      box-shadow:  8px 3px 0 0px var(--accent-color),
-                   -2px 3px 0 10px var(--accent-color) inset;
-      }
-    75%{
-      border-radius: 45% 60%;
-      box-shadow:  -1px -6px 0 0px var(--accent-color),
-                   -3px -5px 0 10px var(--accent-color) inset;
-      }}
-}*/}}
+}}
 
 .rating {
   margin-bottom: 8px;
@@ -136,6 +101,19 @@
 @keyframes rotating {
 	to { transform: rotate(360deg); }
 }
+
+.comments__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-color-black);
+  margin-bottom: 32px;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
 
 .slider-carousel__text--active {
   display: block;
@@ -189,7 +167,6 @@
   + .slick-cloned[aria-hidden='true'] {
   .slider-carousel__image {
     width: 280px;
-    margin-bottom: 8px;
     @media screen and (min-width: 768px) {
       width: 336px;
       margin-top: 76px;
