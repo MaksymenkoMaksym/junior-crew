@@ -165,7 +165,7 @@
   }
 }
 
-.card-list__item :not(:last-child) {
+.card-list__item:not(:last-child) {
   margin-bottom: 12px;
 
   @media screen and (min-width: 1280px) {
