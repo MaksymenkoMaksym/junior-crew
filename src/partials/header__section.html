@@ -203,13 +203,33 @@
     </button>
     <nav class="menu fade-in" data-menu>
       <a class="logo logo__menu" href="#header">
-        <img
-          class="logo__img"
-          src="./images/header/logo-menu-mb-tb.png"
-          alt="company logo"
-          width="190"
-          height="85"
-      /></a>
+        <picture>
+          <source
+            media="(max-width: 1279.98px)"
+            srcset="
+              ./images/header/logo-menu-mb-tb.webp   1x,
+              ./images/header/logo-menu-mb-tb2x.webp 2x
+            "
+            type="image/webp"
+          />
+
+          <source
+            media="(max-width: 1279.98px)"
+            srcset="
+              ./images/header/logo-menu-mb-tb.png   1x,
+              ./images/header/logo-menu-mb-tb2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="logo__img"
+            src="./images/header/logo-menu-mb-tb.png"
+            alt="company logo"
+            width="190"
+            height="85"
+          />
+        </picture>
+      </a>
 
       <ul class="menu__nav menu-list list" id="menu">
         <li class="menu-list__item">
