@@ -77,7 +77,7 @@
   &__item:not(:last-child) {
     margin-right: 4px;
   }
-  &__icon {
+  /*&__icon {
     -webkit-animation: rotating 30s infinite linear;
     -moz-animation: rotating 30s infinite linear;
     -ms-animation: rotating 30s infinite linear;
@@ -109,7 +109,7 @@
     to {
       transform: rotate(360deg);
     }
-  }
+  }*/
 }
 
 .comments__text {
