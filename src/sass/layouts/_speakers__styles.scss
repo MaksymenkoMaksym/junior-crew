@@ -57,7 +57,7 @@
   color: var(--main-text-color-black);
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-desk) {
     @include font(400, 36, 45, null);
   }
 }
@@ -127,6 +127,17 @@
 
     @media screen and (min-width: $breakpoint-desk) {
       max-width: 181px;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.03);
+      box-shadow: 0px 0px 5px 3px rgba(171, 129, 108, 0.38);
+      @include transition(box-shadow transform, 300ms, 0s);
+      border-radius: 25px;
+      border-top-left-radius: 89px;
+      border-top-right-radius: 89px;
     }
   }
 
