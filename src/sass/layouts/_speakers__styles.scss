@@ -21,7 +21,7 @@
   background-position: center;
   background-size: 100% 100%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tab) {
     background-image: url(../images/speakers/sp-splash-tb.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -31,7 +31,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     background-image: url(../images/speakers/sp-splash-dc.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -46,22 +46,19 @@
   border-radius: 20px;
   padding-bottom: 29px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tab) {
     padding-bottom: 40px;
   }
 }
 
 .speakers__title {
   font-family: Caveat Brush;
-  font-size: 24px;
-  line-height: 1.25;
+  @include font(400, 24, 30, null);
   color: var(--main-text-color-black);
   text-align: center;
+
   @media screen and (min-width: 768px) {
-    font-size: 36px;
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 36px;
+    @include font(400, 36, 45, null);
   }
 }
 
@@ -78,14 +75,14 @@
     margin-left: auto;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tab) {
     padding-top: 122px;
     flex-wrap: nowrap;
     gap: 32px 0;
     justify-content: space-between;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     padding-top: 179px;
     gap: 100px 0;
     justify-content: space-around;
@@ -102,14 +99,14 @@
     margin-bottom: 12px;
     border-radius: 50%;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-tab) {
       margin-bottom: 20px;
 
       width: 152px;
       height: 152px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $breakpoint-desk) {
       margin-bottom: 16px;
 
       width: 181px;
@@ -124,38 +121,34 @@
     align-items: center;
     width: calc(50% - 10px);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-tab) {
       max-width: 152px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $breakpoint-desk) {
       max-width: 181px;
     }
   }
 
   &__subtitle {
     font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(600, 16, 20, null);
     color: var(--main-text-color-black);
     text-align: center;
+
     margin-bottom: 12px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-tab) {
       margin-bottom: 20px;
 
-      font-size: 18px;
-      line-height: 1.22;
+      @include font(600, 16, 22, null);
     }
   }
 
   &__desc {
     font-family: Montserrat, sans-serif;
     font-style: italic;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.25;
+    @include font(500, 12, 15, null);
     color: var(--main-text-color-black);
     text-align: center;
 
@@ -163,15 +156,13 @@
       max-width: 130px;
     }
 
-    @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 1.21;
+    @media screen and (min-width: $breakpoint-tab) {
+      @include font(500, 14, 17, null);
 
       width: auto;
     }
-    @media screen and (min-width: 1280px) {
-      font-size: 16px;
-      line-height: 1.25;
+    @media screen and (min-width: $breakpoint-desk) {
+      @include font(500, 16, 20, null);
     }
   }
 }

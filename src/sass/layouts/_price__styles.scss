@@ -3,40 +3,39 @@
   margin-top: 16px;
   padding-bottom: 16px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tab) {
     padding-top: 40px;
     padding-bottom: 80px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     padding-top: 80px;
     padding-bottom: 86px;
   }
 
   &__title {
     font-family: Caveat Brush, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
+    @include font(400, 24, 30, null);
     color: var(--main-text-color-black);
     text-align: center;
 
     margin-bottom: 16px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-tab) {
       margin-bottom: 40px;
-      font-size: 36px;
-      line-height: 1.25;
+
+      @include font(400, 36, 45, null);
     }
   }
 }
 
 .price-cards {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tab) {
     display: flex;
     gap: 14px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     gap: 32px;
   }
 
@@ -66,7 +65,7 @@
       max-width: 280px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-tab) {
       display: flex;
       flex-wrap: nowrap;
       flex-direction: column;
@@ -82,7 +81,7 @@
       }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $breakpoint-desk) {
       padding: 28px 28px 40px;
 
       min-width: 392px;
@@ -99,7 +98,7 @@
     &:first-child {
       margin-bottom: 12px;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $breakpoint-tab) {
         margin-bottom: 0;
       }
     }
@@ -107,9 +106,17 @@
     &:nth-child(2) {
       margin-bottom: 32px;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $breakpoint-tab) {
         margin-bottom: 0;
       }
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.03);
+      box-shadow: 0px 0px 5px 3px rgba(171, 129, 108, 0.38);
+      @include transition(box-shadow transform, 300ms, 0s);
     }
   }
 
@@ -122,17 +129,15 @@
   font-family: Montserrat, sans-serif;
   font-style: italic;
 
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
+  @include font(600, 18, 22, null);
   color: var(--main-text-color-black);
   text-align: center;
 
   margin-bottom: 16px;
 
-  @media screen and (min-width: 1280px) {
-    font-size: 20px;
-    line-height: 1.2;
+  @media screen and (min-width: $breakpoint-desk) {
+    @include font(600, 20, 24, null);
+
     margin-bottom: 40px;
   }
 }
@@ -141,7 +146,6 @@
   margin-bottom: auto;
 
   @media screen and (max-width: 767.98px) {
-    // margin-bottom: auto;
     max-width: 240px;
     margin-right: auto;
     margin-left: auto;
@@ -149,18 +153,15 @@
 
   &__item {
     font-family: Montserrat, sans-serif;
-    font-size: 18px;
-    line-height: 1.22;
-    color: #2e2520;
+    @include font(400, 18, 22, null);
+    color: var(--main-text-color-black);
 
-    @media screen and (min-width: 768px) {
-      font-size: 16px;
-      line-height: 1.25;
+    @media screen and (min-width: $breakpoint-tab) {
+      @include font(400, 16, 20, null);
     }
 
-    @media screen and (min-width: 1280px) {
-      font-size: 20px;
-      line-height: 1.2;
+    @media screen and (min-width: $breakpoint-desk) {
+      @include font(400, 18, 22, null);
     }
   }
 }
@@ -168,7 +169,7 @@
 .card-list__item:not(:last-child) {
   margin-bottom: 12px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     margin-bottom: 16px;
   }
 }
@@ -176,7 +177,7 @@
 .price-cards__pic--white-first {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     display: block;
     position: absolute;
     left: 0;
@@ -186,7 +187,7 @@
 .price-cards__pic--striped-first {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     display: block;
     position: absolute;
     right: 24px;
@@ -196,7 +197,7 @@
 .price-cards__pic--brown-first {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     display: block;
     position: absolute;
     right: 90px;
@@ -205,7 +206,7 @@
 }
 .price-cards__pic--white-second {
   display: none;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     display: block;
     position: absolute;
     right: 0;
@@ -215,7 +216,7 @@
 .price-cards__pic--striped-second {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     display: block;
     position: absolute;
     left: 0;
@@ -225,7 +226,7 @@
 .price-cards__pic--white-third {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     display: block;
     position: absolute;
     right: 0;
@@ -235,7 +236,7 @@
 .price-cards__pic--striped-third {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     display: block;
     position: absolute;
     left: 44px;
@@ -248,7 +249,7 @@
 
   margin-top: 32px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $breakpoint-desk) {
     margin-top: 40px;
   }
 }
