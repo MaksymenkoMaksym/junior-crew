@@ -1,2 +1,0 @@
-!function(){var e=$("#carousel"),o=($("[data-reviews]"),$("[data-slider-range]"));e.on("init",(function(e,s){o.text("".concat(s.currentSlide+1,"/").concat(s.slideCount))})),e.slick({centerMode:!0,arrows:!1,centerPadding:"0px",infinity:!0,slidesToShow:3,slidesToScroll:3,focusOnSelect:!0,draggable:!1,autoplay:!1,asNavFor:".comments",speed:500,responsive:[{breakpoint:767.98,settings:{slidesToShow:1,slidesToScroll:1,infinite:!0}}]}),$(".comments").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,infinity:!0,asNavFor:".carousel"})}();
-//# sourceMappingURL=index.79a5e259.js.map
