@@ -120,6 +120,7 @@
     flex-basis: 237px;
     border-left: 1px solid rgba(171, 129, 108, 0.5);
     padding-left: 24px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1280px) {
@@ -168,16 +169,14 @@
   //     }}
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 18px;
-    &--margin {
-      margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 18px;
     }
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 16px;
-    &--margin {
-      margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 16px;
     }
   }
 }
