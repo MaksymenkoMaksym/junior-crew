@@ -23,7 +23,9 @@
 
     @media screen and (min-width: $breakpoint-tab) {
       margin-bottom: 40px;
+    }
 
+    @media screen and (min-width: $breakpoint-desk) {
       @include font(400, 36, 45, null);
     }
   }
