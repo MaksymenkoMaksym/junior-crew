@@ -7,16 +7,12 @@ body {
   color: var(--main-text-color-black);
 
   background-color: #ffffff;
-  // background-size: cover;
 
-  // background-position: top 0 right 0, bottom 250px right 0;
-  // background-size: 100% 460px, 100% 1230px;
-
-  background-position: top 0 right 0, bottom 211px right 0;
   background-repeat: no-repeat;
 
   // mobile screens
   background-size: 100% 460px, 100% 1303px;
+  background-position: top 0 right 0, bottom 211px right 0;
 
   background-image: url(../images/background/bg-header-mb.png),
     url(../images/background/bg2-rev-con-mb.png);
