@@ -5,10 +5,10 @@
 .carousel {
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-  margin-bottom: 49px;
+    margin-bottom: 49px;
   }
   @media screen and (min-width: 1280px) {
-  margin-bottom: 64px;
+    margin-bottom: 64px;
   }
 
   &__title {
@@ -29,44 +29,45 @@
   }
 }
 
-.slider-carousel {  
+.slider-carousel {
   margin-bottom: 20px;
-&__subtitle {
-  text-align: center;
-  font-style: italic;
-  font-size: 14px;
-  line-height: 1.21;
-  color: var(--main-text-color-black);
-  margin-bottom: 8px;
-  @media screen and (min-width: 768px) {
+  &__subtitle {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--main-text-color-black);
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+  &__text {
+    display: none;
+    text-align: center;
     font-size: 16px;
     line-height: 1.25;
+    color: var(--main-text-color-black);
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      line-height: 1.22;
+    }
   }
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
-&__text {
-  display: none;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.25;
-  color: var(--main-text-color-black);
-  @media screen and (min-width: 1280px) {
-    font-size: 18px;
-    line-height: 1.22;
-  }
-}
 
-&__image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  height: auto;
-  cursor: pointer;
-}}
+  &__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    height: auto;
+    cursor: pointer;
+  }
+}
 
 .rating {
   margin-bottom: 8px;
@@ -75,32 +76,41 @@
   justify-content: center;
   &__item:not(:last-child) {
     margin-right: 4px;
-}
-}
+  }
+  &__icon {
+    -webkit-animation: rotating 30s infinite linear;
+    -moz-animation: rotating 30s infinite linear;
+    -ms-animation: rotating 30s infinite linear;
+    -o-animation: rotating 30s infinite linear;
+    animation: rotating 30s infinite linear;
+  }
 
-/*.rating__icon {
-	-webkit-animation: rotating 30s infinite linear;
-	-moz-animation: rotating 30s infinite linear;
-	-ms-animation: rotating 30s infinite linear;
-	-o-animation: rotating 30s infinite linear;
-	animation: rotating 30s infinite linear;
+  @-webkit-keyframes rotating {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes rotating {
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-ms-keyframes rotating {
+    to {
+      -ms-transform: rotate(360deg);
+    }
+  }
+  @-o-keyframes rotating {
+    to {
+      -o-transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
-
-@-webkit-keyframes rotating {
-	to { -webkit-transform: rotate(360deg); }
-}
-@-moz-keyframes rotating {
-	to { -moz-transform: rotate(360deg); }
-}
-@-ms-keyframes rotating {
-	to { -ms-transform: rotate(360deg); }
-}
-@-o-keyframes rotating {
-	to { -o-transform: rotate(360deg); }
-}
-@keyframes rotating {
-	to { transform: rotate(360deg); }
-}*/
 
 .comments__text {
   text-align: center;
@@ -113,7 +123,6 @@
     line-height: 1.22;
   }
 }
-
 
 .slider-carousel__text--active {
   display: block;
@@ -128,10 +137,9 @@
   opacity: 0;
 }
 
-.slick-slide img { 
-    margin-bottom: 8px
-  }
-
+.slick-slide img {
+  margin-bottom: 8px;
+}
 
 .slick-slider {
   width: 280px;
@@ -145,14 +153,12 @@
   }
 }
 
-
-
 .slick-slide,
 .slick-slide[aria-hidden='true']:not(.slick-cloned)
   ~ .slick-cloned[aria-hidden='true'] {
   .slider-carousel__image {
     width: 152px;
-  
+
     @media screen and (min-width: 768px) {
       width: 152px;
     }
@@ -178,7 +184,6 @@
   }
 }
 
-
 .reviews-pagination {
   position: relative;
   text-align: center;
@@ -189,29 +194,24 @@
     font-size: 16px;
     line-height: 1.25;
   }
+  &::after {
+    content: '';
+    display: inline-block;
+    align-items: center;
+    width: 35px;
+    height: 1px;
+    margin-left: 12px;
+    vertical-align: middle;
+    background-color: currentColor;
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    align-items: center;
+    width: 35px;
+    height: 1px;
+    margin-right: 12px;
+    vertical-align: middle;
+    background-color: currentColor;
+  }
 }
-
-.reviews-pagination::after {
-  content: '';
-  display: inline-block;
-  align-items: center;
-  width: 35px;
-  height: 1px;
-  margin-left: 12px;
-  vertical-align: middle;
-  background-color: currentColor;
-}
-
-.reviews-pagination::before {
-  content: '';
-  display: inline-block;
-  align-items: center;
-  width: 35px;
-  height: 1px;
-  margin-right: 12px;
-  vertical-align: middle;
-  background-color: currentColor;
-}
-
-
-

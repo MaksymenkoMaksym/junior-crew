@@ -15,6 +15,8 @@ $carouselEl.slick({
     infinity:true,
     slidesToShow: 3,
     slidesToScroll:3,
+    fade: true,
+    cssEase:'linear',
     focusOnSelect: true,
     draggable: false,
     autoplay: false,
@@ -54,6 +56,8 @@ $('.comments').slick({
     slidesToScroll: 1,
     arrows: false,
     infinity:true,
+    fade: true,
+    cssEase:'linear',
     asNavFor:'.carousel',
   });
   
