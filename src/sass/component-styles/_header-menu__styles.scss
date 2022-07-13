@@ -75,6 +75,10 @@
   @include transition-two(transform, opacity, 300ms, 100ms);
   background-color: rgba(254, 243, 228, 0.9);
   backdrop-filter: blur(4px);
+
+  @media screen and (orientation: landscape) {
+    overflow-y: auto;
+  }
 }
 
 .menu.is-open {
