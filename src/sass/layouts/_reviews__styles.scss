@@ -13,8 +13,7 @@
 
   &__title {
     font-family: 'Caveat Brush';
-    font-size: 24px;
-    line-height: 1.25;
+    @include font(400, 24, 30, null);
     text-align: center;
     color: var(--main-text-color-black);
     margin-bottom: 20px;
@@ -22,8 +21,7 @@
       margin-bottom: 7px;
     }
     @media screen and (min-width: 1280px) {
-      font-size: 36px;
-      line-height: 1.25;
+      @include font(400, 36, 45, null);
       margin-bottom: 85px;
     }
   }
@@ -34,28 +32,20 @@
   &__subtitle {
     text-align: center;
     font-style: italic;
-    font-size: 14px;
-    line-height: 1.21;
+    @include font(500, 14, 17, null);
     color: var(--main-text-color-black);
     margin-bottom: 8px;
-    @media screen and (min-width: 768px) {
-      font-size: 16px;
-      line-height: 1.25;
-    }
     @media screen and (min-width: 1280px) {
-      font-size: 16px;
-      line-height: 1.25;
+      @include font(500, 16, 20, null);
     }
   }
   &__text {
     display: none;
     text-align: center;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(400, 16, 20, null);
     color: var(--main-text-color-black);
     @media screen and (min-width: 1280px) {
-      font-size: 18px;
-      line-height: 1.22;
+      @include font(400, 18, 22, null);
     }
   }
 
@@ -77,7 +67,7 @@
   &__item:not(:last-child) {
     margin-right: 4px;
   }
-  /*&__icon {
+  &__icon {
     -webkit-animation: rotating 30s infinite linear;
     -moz-animation: rotating 30s infinite linear;
     -ms-animation: rotating 30s infinite linear;
@@ -109,18 +99,16 @@
     to {
       transform: rotate(360deg);
     }
-  }*/
+  }
 }
 
 .comments__text {
   text-align: center;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(400, 16, 20, null);
   color: var(--main-text-color-black);
   margin-bottom: 32px;
   @media screen and (min-width: 1280px) {
-    font-size: 18px;
-    line-height: 1.22;
+    @include font(400, 18, 22, null);
   }
 }
 
