@@ -2,6 +2,18 @@
   position: relative;
 }
 
+.nav-wrapper {
+  display: flex;
+  padding-top: 16px;
+  @media screen and (min-width: $breakpoint-tab) {
+    padding-top: 24px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    padding-top: 46px;
+  }
+}
+
 // header text
 .header {
   &__title {
@@ -34,17 +46,6 @@
   }
 }
 
-.nav-wrapper {
-  display: flex;
-  padding-top: 16px;
-  @media screen and (min-width: $breakpoint-tab) {
-    padding-top: 24px;
-  }
-
-  @media screen and (min-width: $breakpoint-desk) {
-    padding-top: 46px;
-  }
-}
 // main navigation desc
 .navigation {
   display: none;
@@ -94,7 +95,7 @@
     opacity: 1;
   }
 }
-
+// donut decoration
 .header__donuts {
   position: absolute;
   top: 0;
