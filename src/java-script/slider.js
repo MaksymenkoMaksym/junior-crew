@@ -32,6 +32,22 @@ $carouselEl.slick({
     ]
 });
 
+$carouselEl.on('afterChange', renderCarouselRange);
+$carouselEl.on('beforeChange', (e, slick, currSlide, nextSlide) => {
+    if (currSlide === nextSlide) return;
+
+    $reviewsEl.addClass('reviews--animation');
+
+    $(`[data-slide]`).each((_, slideEl) => {
+        const $slideEl = $(slideEl);
+        const currentSlide = $slideEl.attr('data-slide');
+            
+        $slideEl.toggleClass('slider-carousel__text--active', +currentSlide === nextSlide);
+        setTimeout(() => {
+            $reviewsEl.removeClass('reviews--animation');
+        }, ANIMATION_TIMING);
+    });
+});
 
 $('.comments').slick({
     slidesToShow: 1,
