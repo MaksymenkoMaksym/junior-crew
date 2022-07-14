@@ -1,3 +1,6 @@
+import $ from "jquery";
+import "slick-carousel";
+
 const ANIMATION_TIMING = 500;
 const $carouselEl = $('#carousel');
 const $reviewsEl = $('[data-reviews]');
