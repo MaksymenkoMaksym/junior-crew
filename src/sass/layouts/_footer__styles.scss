@@ -1,105 +1,103 @@
 .footer {
-    position: relative;
-    padding-bottom: 46px;
-    @media screen and (min-width: 768px) {
-    padding-bottom: 83px;
-    }
-       
-    @media screen and (min-width: 1280px) {
+  position: relative;
+  padding-bottom: 46px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1280px) {
     padding-bottom: 232px;
-    }
+  }
 }
 
-
 .footer__social-list {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 60px;
-
-    }
-    @media screen and (min-width: 1280px) {
+  }
+  @media screen and (min-width: 1280px) {
     margin-bottom: 73px;
-
-    }
+  }
 }
 
 .contacts-list {
-
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    @media screen and (min-width: 768px) {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
     justify-content: normal;
     gap: 426px;
-    }
+  }
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 107px;
     gap: 620px;
-    }
+  }
 }
 
 .contacts-list__phone,
 .contacts-list__map {
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #2E2520;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2e2520;
 }
 
 .contact-list__icon {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 // Footer IMG
 
 footer {
-    position: relative;
-    @media screen and (max-width: 767px){
-   background-image: url('../images/contact/cn-flour-mb.png'); 
+  position: relative;
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/contact/cn-flour-mb.png');
     background-size: 84px 94px;
     background-position: right 0% bottom 0%;
     background-repeat: no-repeat;
 
     @media screen and (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        footer {
-            background-image: url('../images/contact/cn-flour-mb2x.png') type("image/png");
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      footer {
+        background-image: url('../images/contact/cn-flour-mb2x.png')
+          type('image/png');
+      }
     }
-    }
-    }
-    
-        @media screen and (min-width: 768px) and (max-width: 1279px) {
-        background-image: url('../images/contact/cn-flour-tb.png');
-        background-size: 184px 163px;
-        background-repeat: no-repeat;
-        background-position: right 0% bottom 0%;
+  }
 
-        @media screen and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (-o-min-device-pixel-ratio: 2/1),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        footer {
-        background-image: url('../images/contact/cn-flour-tb2x.png') type("image/png");
-        }
-        }
-        }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url('../images/contact/cn-flour-tb.png');
+    background-size: 184px 163px;
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 0%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      footer {
+        background-image: url('../images/contact/cn-flour-tb2x.png')
+          type('image/png');
+      }
+    }
+  }
 }
 
 .footer-img {
-    display: none;
-    position: absolute;
-    bottom: 75px;
-    right: 0;
-    @media screen and (min-width: 1280px) {
-        display: block;
-}
+  display: none;
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
